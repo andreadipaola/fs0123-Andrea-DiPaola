@@ -34,7 +34,6 @@
     
     <!-- main start -->
     <main class="main container">
-        <span class="anchor"></span>
         <article>
             <h1>Come creare un template per i post</h1> 
             
@@ -108,15 +107,15 @@
 
     <!-- aside start -->
     <aside class="aside container">
-        <div class="newsletter">
+        <section class="newsletter">
             <h2>Vuoi rimanere aggiornato su altre novità del blog? Iscriviti alla nostra newsletter:</h2>
-            <form>
-            <!-- <label for="email">email</label> -->
+            <form class="form">
+                <label for="email">email</label>
                 <input type="email" name="email" id="email" placeholder="inserisci la tua email">
-                <input type="submit" value="Iscriviti!">
+                <input type="submit" id="submit" value="Iscriviti!">
             </form>
-        </div>
-        <div class="correlated-articles">
+        </section>
+        <section class="correlated-articles">
             <h2>Articoli correlati</h2>
             <article>
                 <h3><a href="#">Validare il codice HTML</a></h3>
@@ -136,7 +135,7 @@
                 <span>pubblicato il: </span> 
                 <time pudate datetime="30-09-2020" title="30 Settembre 2020">30/09/2020</time>    
             </article>
-        </div>
+        </section>
     </aside>
     <!-- aside end -->
 
@@ -144,7 +143,8 @@
     <footer class="footer container">
         <p>Blog Epicode &copy;2021</p>
         <p>Testata online di Mario Rossi, registrata con prot. n.213/2018 - via Luigi Einaudi 2 - Milano. P.IVA 00112233.</p>
-        <address><a href="mailto:info@epicode.school">info@epicode.school</a></address>
+        <address>email: <a href="mailto:info@epicode.school">info@epicode.school</a></address>
+        
     </footer>
     <!-- footer end -->
 

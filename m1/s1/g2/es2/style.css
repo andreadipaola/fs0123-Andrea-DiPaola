@@ -10,11 +10,11 @@ html {
 
 a {
     text-decoration: none;
-    color: #000;
+    color: #adadad;
 }
 
 a:hover {
-    color: #FF2751;
+    color: #00D9DA;
 }
 
 ul li {
@@ -32,12 +32,8 @@ ul li {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: fixed;
     padding: 12px 48px;
-    background-color: #00D9DA;
-    top: 0;
-    left: 0;
-    z-index: 100;
+    background-color: #c6c6c6;
 }
 
 .logo-image {
@@ -54,6 +50,12 @@ ul li {
 }
 
 .menu ul li a {
+    color: #000000;
+    margin-left: 20px;
+}
+
+.menu ul li a:hover {
+    color: #00D9DA;
     margin-left: 20px;
 }
 
@@ -61,52 +63,44 @@ ul li {
     position: relative;
 }
 
-.anchor {
-    display: block;
-    position: absolute;
-    width: 0;
-    height: 0;
-    z-index: -1;
-    top: -48px;
-    left: 0;
-    visibility: hidden;
-}
-
 article h1, article h2, article h3 {
     text-transform: uppercase;
 }
 article h1 {
     font-size: 3rem;
-    margin-bottom: 12px;
+    margin-top: 48px;
+    line-height: 3rem;
 }
 
 .author-info {
-    border: 1px solid rgba(0, 217, 218, 0.8);
+    border: 1px solid #c6c6c6;
+    border-radius: 5px;
     display: inline-block;
     padding: 5px 10px;
-    margin-bottom: 48px;
+    margin-top: 12px;
 }
 
 article h2 {
     font-size: 1.5rem;
-    margin-bottom: 48px;
+    margin-top: 96px;
 }
 
 article h3 {
     font-size: 1rem;
-    margin-bottom: 24px;
+    margin-top: 36px;
 }
 
 article ul {
-    margin-bottom: 48px;
+    margin-top: 12px;
 }
 table {
     width: 100%;
     text-align: center;
+    margin-top: 36px;
 }
 
 table caption {
-    text-align: center;
+    text-align: left;
     font-size: 1rem;
     font-weight: 800;
     text-transform: uppercase;
@@ -115,34 +109,43 @@ table caption {
 
 thead {
     text-transform: uppercase;
-    font-size: 1.5rem;
-    font-weight: 400;
+    font-size: 1rem;
 }
 
 tbody {
-    font-size: 1.5rem;
-}
-
-table th, table td {
+    font-size: 1rem;
 }
 
 .aside {
-    background-color: lightsalmon;
+    /* background-color: lightsalmon; */
+    justify-content: space-between;
+}
+
+.newsletter {
+    margin-top: 72px;
+}
+
+form {
+    margin-top: 12px;
+}
+
+.correlated-articles {
+    margin-top: 96px;
+}
+
+article h3 {
+    margin-top: 36px;
 }
 
 .footer {
-    background-color: lightskyblue;
+    /* background-color: lightskyblue; */
+    justify-content: space-between;
+    margin-top: 72px;
 }
 
 @media only screen and (min-width: 961px) {
-    container {
+    .container {
         width: 80%;
-    }
-    main {
-        width: 70%;
-    }
-
-    aside {
-        width: 30%;
+        margin: 0 auto;
     }
 }
