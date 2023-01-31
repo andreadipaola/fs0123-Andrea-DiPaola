@@ -33,11 +33,12 @@
     <!-- header end -->
     
     <!-- main start -->
-    <main>
+    <main class="main container">
+        <span class="anchor"></span>
         <article>
             <h1>Come creare un template per i post</h1> 
             
-            <div>
+            <div class="author-info">
                 <address class="author">di <a rel="author" href="#">Mario Rossi</a></address>
                 <span>pubblicato il: </span> 
                 <time pudate datetime="25-10-2020" title="25 Ottobre 2020">25/10/2020</time> 
@@ -106,39 +107,43 @@
     <!-- main end -->
 
     <!-- aside start -->
-    <aside>
-        <h2>Vuoi rimanere aggiornato su altre novità del blog? Iscriviti alla nostra newsletter:</h2>
-        <form>
+    <aside class="aside container">
+        <div class="newsletter">
+            <h2>Vuoi rimanere aggiornato su altre novità del blog? Iscriviti alla nostra newsletter:</h2>
+            <form>
             <!-- <label for="email">email</label> -->
-            <input type="email" name="email" id="email" placeholder="inserisci la tua email">
-            <input type="submit" value="Iscriviti!">
-        </form>
-        <h2>Articoli correlati</h2>
-        <article>
-            <h3><a href="#">Validare il codice HTML</a></h3>
-            <p>Categoria: develop</p>
-            <span>pubblicato il: </span> 
-            <time pudate datetime="18-09-2020" title="18 Settembre 2020">18/09/2020</time>   
-        </article>
-        <article>
-            <h3><a href="#">Correggere la sintassi</a></h3>
-            <p>Categoria: develop</p>
-            <span>pubblicato il: </span> 
-            <time pudate datetime="16-09-2020" title="16 Settembre 2020">16/09/2020</time> 
-        </article>
-        <article>
-            <h3><a href="#">Meno Kb nella pagina</a></h3>
-            <p>Categoria: ottimizzazione</p>
-            <span>pubblicato il: </span> 
-            <time pudate datetime="30-09-2020" title="30 Settembre 2020">30/09/2020</time>    
-        </article>
+                <input type="email" name="email" id="email" placeholder="inserisci la tua email">
+                <input type="submit" value="Iscriviti!">
+            </form>
+        </div>
+        <div class="correlated-articles">
+            <h2>Articoli correlati</h2>
+            <article>
+                <h3><a href="#">Validare il codice HTML</a></h3>
+                <p>Categoria: develop</p>
+                <span>pubblicato il: </span> 
+                <time pudate datetime="18-09-2020" title="18 Settembre 2020">18/09/2020</time>   
+            </article>
+            <article>
+                <h3><a href="#">Correggere la sintassi</a></h3>
+                <p>Categoria: develop</p>
+                <span>pubblicato il: </span> 
+                <time pudate datetime="16-09-2020" title="16 Settembre 2020">16/09/2020</time> 
+            </article>
+            <article>
+                <h3><a href="#">Meno Kb nella pagina</a></h3>
+                <p>Categoria: ottimizzazione</p>
+                <span>pubblicato il: </span> 
+                <time pudate datetime="30-09-2020" title="30 Settembre 2020">30/09/2020</time>    
+            </article>
+        </div>
     </aside>
     <!-- aside end -->
 
     <!-- footer start -->
-    <footer>
+    <footer class="footer container">
         <p>Blog Epicode &copy;2021</p>
-        <p>testata online di Mario Rossi, registrata con prot. n.213/2018 - via Luigi Einaudi 2 - Milano. P.IVA 00112233.</p>
+        <p>Testata online di Mario Rossi, registrata con prot. n.213/2018 - via Luigi Einaudi 2 - Milano. P.IVA 00112233.</p>
         <address><a href="mailto:info@epicode.school">info@epicode.school</a></address>
     </footer>
     <!-- footer end -->
