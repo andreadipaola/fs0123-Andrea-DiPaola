@@ -56,7 +56,7 @@ header {
 figure {
     margin-bottom: 40px;
 }
-figure img {
+figure img, video {
     width: 100%;
     border-radius: 10px;
 }
@@ -78,7 +78,7 @@ figure figcaption {
     text-transform: uppercase;
 }
 
-.featured a {
+.featured div a {
     color: #117777;
     text-decoration: underline;
 }
@@ -86,7 +86,7 @@ figure figcaption {
 .lv2-heading {
     font-weight: normal;
     padding-bottom: 20px;
-    border-bottom: 1px solid #117777;
+    border-bottom: 1px solid #EBF9FA;
     margin-bottom: 30px;
 }
 
