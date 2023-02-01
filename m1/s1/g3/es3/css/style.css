@@ -73,7 +73,30 @@ figure figcaption {
     margin-bottom: 50px;
 }
 
+.featured span {
+    display: block;
+    color: #b5460f;
+    text-transform: uppercase;
+}
 
+.featured a {
+    color: #117777;
+    text-decoration: underline;
+}
+
+.lv2-heading {
+    font-weight: normal;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #117777;
+    margin-bottom: 30px;
+}
+
+
+.lv3-heading {
+    font-size: 1rem;
+    padding-bottom: 20px;
+    margin-bottom: 10px;
+}
 
 
 @media screen and (min-width:960px) {
