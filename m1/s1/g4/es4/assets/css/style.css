@@ -3,6 +3,10 @@ body{
     font-family: 'Poppins', sans-serif;
 }
 
+.background {
+    background-image: url(../img/sfondo.png);
+}
+
 .container{
     margin: 0 auto;
     max-width: 300px;
@@ -12,23 +16,39 @@ body{
     text-align: center;
 }
 
+.line-height {
+    line-height: 1.5;
+}
+
+.tag {
+    background-color: lightgrey;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.text-white {
+    color: #fff;
+}
+
 hr {
     visibility: hidden;
 }
+
 a,a:visited,a:hover,a:active{
     text-decoration: none;
     color: black;
 }
 
 
-.background {
-    background-image: url(../img/sfondo.png);
-}
 /* HEADER */
 .header {
     background-color: lightseagreen;
     border: 1px solid black;
-    padding: 20px;
+    padding: 20px 0;
 }
 
 /* .logo{
@@ -90,11 +110,7 @@ h1{
     margin-bottom: 20px;
 }
 
-.tag {
-    background-color: grey;
-    border: 1px solid black;
-    border-radius: 5%;
-}
+
 main ul, main ol{
     margin-left: 30px;
 }
