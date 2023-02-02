@@ -49,11 +49,11 @@ nav li{
 
 
 nav li a::before{
-    content: '>';
+    content: '&#8594;';
 }
 
 nav li a::after{
-    content: '>';
+    content: '&larr;';
 }
 
 
