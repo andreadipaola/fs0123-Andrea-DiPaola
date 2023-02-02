@@ -5,23 +5,30 @@ body{
 
 .container{
     margin: 0 auto;
-    max-width: 450px;
+    max-width: 300px;
 }
 
+.center-item {
+    text-align: center;
+}
+
+hr {
+    visibility: hidden;
+}
 a,a:visited,a:hover,a:active{
     text-decoration: none;
     color: black;
 }
 
 
-/*.background{
+.background {
     background-image: url(../img/sfondo.png);
 }
 /* HEADER */
-.header{
-    width: 100%;
-    text-align: center;
-    padding: 20px 0;
+.header {
+    background-color: lightseagreen;
+    border: 1px solid black;
+    padding: 20px;
 }
 
 /* .logo{
@@ -49,24 +56,29 @@ nav li{
 
 
 nav li a::before{
-    content: '&#8594;';
+    content: '';
 }
 
 nav li a::after{
-    content: '&larr;';
+    content: '';
 }
 
 
 /* MAIN */
+
+main {
+    padding: 30px 15px ;
+    border: 1px solid black;
+    background-color: #fff;
+}
+
 h1{
-    font-size: 1.5rem;
+    font-size: 1.7rem;
+    line-height: 1.5;
     font-weight: bold;
     margin-bottom:20px;
 }
 
-main{
-    padding: 30px 15px ;
-}
 
 .author{
     color: gray;
@@ -78,8 +90,29 @@ main{
     margin-bottom: 20px;
 }
 
-main li{
+.tag {
+    background-color: grey;
+    border: 1px solid black;
+    border-radius: 5%;
+}
+main ul, main ol{
+    margin-left: 30px;
+}
+
+main li, {
     line-height: 1.4;
+}
+
+main i {
+    display: inline-block;
+}
+
+i + p {
+    display: inline-block;
+}
+
+strong {
+    color: purple;
 }
 /* ELEMENTI NEL MAIN - ARTICLE */
 
@@ -90,3 +123,7 @@ main li{
 /* ELEMENTI NELL' ASIDE */
 
 /* FOOTER */
+
+footer {
+    border: 1px solid black;
+}
