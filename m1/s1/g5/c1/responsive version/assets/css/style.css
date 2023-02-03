@@ -1,0 +1,193 @@
+/* Your styles here */
+/* GENERAL STYLES */
+
+:root {
+    --grey: #393d41;
+    --turquoise: #25a2c3;
+    --lightgreen: #c8e7f0;
+    --white: #fff;
+    --black: #000;
+    --red: #f04c2f;
+    --darkred: #e22d0e;
+    --lightgrey: #dee1e3;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.2rem;
+    line-height: 1.65;
+    color: var(--grey);
+}
+
+h1,h2,h3,h4 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    /* DA TRACCIA L'INTERLINEA E'DI 1.5 MA PER RIMANERE FEDELE AL LAYOUT CREDO SIA QUESTO IL GIUSTO VALORE */
+    line-height: 1.1; 
+    color: var(--turquoise);
+}
+
+h1 {
+    font-size: 1.7rem;
+    text-transform: capitalize;
+    margin-bottom: 15px;
+}
+
+h2 {
+    font-size: 1.5rem;
+    color: var(--white);
+    margin-bottom: 20px;
+}
+
+h3 {
+    margin: 35px 0 15px;
+    font-size: 1rem;
+}
+
+h4 {
+    font-size: 0.8rem;
+    margin: 15px 0 10px;
+}
+
+p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+.center-item {
+    text-align: center;
+}
+
+
+img {
+    max-width: 100%;
+    height:auto;
+}
+
+/* HEADER STYLES */
+header {
+    background-color: var(--black);
+    padding: 20px;
+}
+
+/* DA RIVEDERE */
+.logo {
+    max-width: 30%;
+    height: auto
+}
+/* DA RIVEDERE */
+
+/* MAIN STYLES */
+section {
+    padding: ;
+}
+
+.section-one {
+    background-image: url("../images/banner.jpg");
+    background-size: cover;
+    padding: 45px 25px 35px;
+}
+
+.section-two {
+    padding: 30px 25px;
+}
+
+
+.section-three {
+    color: var(--white);
+}
+
+
+
+.cta:link, .cta:hover, .cta:active, .cta:visited {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: var(--white);
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 12px 24px;
+    border-radius: 5px;;
+    background-color: var(--red);
+}
+
+.cta:hover {
+    color: var(--white);
+    background-color: var(--turquoise);
+}
+
+.circle-container img {
+    border-radius: 50%;
+}
+
+.section-three {
+    background-color: var(--darkred);
+    padding: 60px 25px 40px;
+}
+
+.section-three h2 {
+    margin-bottom: 30px;
+}
+
+/* .section-three p {
+    margin-bottom: 0;
+} */
+
+.cite {
+    font-style: italic;
+    margin-bottom: 20px;;
+}
+
+.author {
+    font-size: 1.1rem;
+    margin-bottom: 0;
+}
+
+.role {
+    font-size: 0.8rem;
+    margin-bottom: 0;
+}
+/* ASEIDE STYLES */
+
+aside {
+    padding: 30px 0;
+}
+.card {
+    border: 1px solid var(--lightgrey);
+    border-radius: 5px;
+    margin: 35px 25px;
+}
+
+.card p {
+    font-size: 0.8rem;
+    margin: 0 20px 30px;
+}
+
+/* FOOTER STYLES */
+footer {
+    color: var(--lightgreen);
+    background-color: var(--turquoise);
+    padding: 40px 0 60px;
+    font-size: 0.9rem;
+}
+
+footer h2 {
+    color: var(--white);
+}
+
+footer a {
+    color: var(--lightgreen);
+}
+
+footer p {
+    display: inline;
+}
+
+.copyright {
+    font-size: 0.8rem;
+}
+
+.separator {
+    border-top: 1px solid white;
+    margin: 30px 120px;
+}
