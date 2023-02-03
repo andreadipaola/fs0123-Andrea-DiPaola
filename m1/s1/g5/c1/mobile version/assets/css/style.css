@@ -36,7 +36,7 @@ h1 {
 h2 {
     font-size: 1.5rem;
     color: var(--white);
-    margin: 30px 0;
+    margin-bottom: 20px;
 }
 
 h3 {
@@ -72,8 +72,8 @@ header {
 
 /* DA RIVEDERE */
 .logo {
-    width: 30%;
     max-width: 30%;
+    height: auto
 }
 /* DA RIVEDERE */
 
@@ -122,9 +122,36 @@ section {
 
 .section-three {
     background-color: var(--darkred);
+    padding: 60px 25px 40px;
 }
 
+.section-three h2 {
+    margin-bottom: 30px;
+}
+
+/* .section-three p {
+    margin-bottom: 0;
+} */
+
+.cite {
+    font-style: italic;
+    margin-bottom: 20px;;
+}
+
+.author {
+    font-size: 1.1rem;
+    margin-bottom: 0;
+}
+
+.role {
+    font-size: 0.8rem;
+    margin-bottom: 0;
+}
 /* ASEIDE STYLES */
+
+aside {
+    padding: 30px 0;
+}
 .card {
     border: 1px solid var(--lightgrey);
     border-radius: 5px;
@@ -133,13 +160,15 @@ section {
 
 .card p {
     font-size: 0.8rem;
-    margin: 0 20px;
+    margin: 0 20px 30px;
 }
 
 /* FOOTER STYLES */
 footer {
     color: var(--lightgreen);
     background-color: var(--turquoise);
+    padding: 40px 0 60px;
+    font-size: 0.9rem;
 }
 
 footer h2 {
@@ -151,5 +180,14 @@ footer a {
 }
 
 footer p {
-    display: inline-block;
+    display: inline;
+}
+
+.copyright {
+    font-size: 0.8rem;
+}
+
+.separator {
+    border-top: 1px solid white;
+    margin: 30px 120px;
 }
