@@ -1,1 +1,24 @@
 /* Your styles here */
+/* GENERAL STYLES */
+
+:root {
+    --grey: #393d41;
+    --turquoise: #25a2c3;
+    --lightgreen: #c8e7f0;
+    --white: #fff;
+    --black: #000;
+    --red: #f04c2f;
+    --darkred: #e22d0e;
+    --lightyellow: #dee2c3;
+    --lightgrey: #dee1e3;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1,h2,h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
