@@ -19,34 +19,87 @@ body {
     color: var(--grey);
 }
 
-h1,h2,h3 {
+h1,h2,h3,h4 {
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
-    line-height: 1.5;
+    /* DA TRACCIA L'INTERLINEA E'DI 1.5 MA PER RIMANERE FEDELE AL LAYOUT CREDO SIA QUESTO IL GIUSTO VALORE */
+    line-height: 1.1; 
     color: var(--turquoise);
 }
 
+h2 {
+    color: var(--white);
+}
+
+p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+.center-item {
+    text-align: center;
+}
+
+
+img {
+    max-width: 100%;
+    height:auto;
+}
 
 /* HEADER STYLES */
 header {
     background-color: var(--black);
+    padding: 20px;
 }
+
+/* DA RIVEDERE */
+.logo {
+    width: 30%;
+    max-width: 30%;
+}
+/* DA RIVEDERE */
 
 /* MAIN STYLES */
 .section-one {
     background-image: url("../images/banner.jpg");
+    background-size: cover;
+    padding: 45px 25px 35px;;
 }
 
-.section-one .cta {
+h1 {
+    font-size: 1.7rem;
+    text-transform: capitalize;
+    margin-bottom: 15px;
+}
+
+.cta:link, .cta:hover, .cta:active, .cta:visited {
     font-family: 'Montserrat', sans-serif;
+    font-size: 0.8rem;
     font-weight: 700;
+    color: var(--white);
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 12px 24px;
+    border-radius: 5px;;
     background-color: var(--red);
 }
+
+.cta:hover {
+    color: var(--white);
+    background-color: var(--turquoise);
+}
+
+
+
 
 .section-three {
     background-color: var(--darkred);
 }
 
+/* ASEIDE STYLES */
+aside .card {
+    border: 1px solid var(--lightgrey);
+}
 /* FOOTER STYLES */
 footer {
     color: var(--lightgreen);
