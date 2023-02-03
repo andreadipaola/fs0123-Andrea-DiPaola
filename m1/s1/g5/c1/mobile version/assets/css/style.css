@@ -27,8 +27,26 @@ h1,h2,h3,h4 {
     color: var(--turquoise);
 }
 
+h1 {
+    font-size: 1.7rem;
+    text-transform: capitalize;
+    margin-bottom: 15px;
+}
+
 h2 {
+    font-size: 1.5rem;
     color: var(--white);
+    margin: 30px 0;
+}
+
+h3 {
+    margin: 35px 0 15px;
+    font-size: 1rem;
+}
+
+h4 {
+    font-size: 0.8rem;
+    margin: 15px 0 10px;
 }
 
 p {
@@ -60,17 +78,26 @@ header {
 /* DA RIVEDERE */
 
 /* MAIN STYLES */
+section {
+    padding: ;
+}
+
 .section-one {
     background-image: url("../images/banner.jpg");
     background-size: cover;
-    padding: 45px 25px 35px;;
+    padding: 45px 25px 35px;
 }
 
-h1 {
-    font-size: 1.7rem;
-    text-transform: capitalize;
-    margin-bottom: 15px;
+.section-two {
+    padding: 30px 25px;
 }
+
+
+.section-three {
+    color: var(--white);
+}
+
+
 
 .cta:link, .cta:hover, .cta:active, .cta:visited {
     font-family: 'Montserrat', sans-serif;
@@ -89,17 +116,26 @@ h1 {
     background-color: var(--turquoise);
 }
 
-
-
+.circle-container img {
+    border-radius: 50%;
+}
 
 .section-three {
     background-color: var(--darkred);
 }
 
 /* ASEIDE STYLES */
-aside .card {
+.card {
     border: 1px solid var(--lightgrey);
+    border-radius: 5px;
+    margin: 35px 25px;
 }
+
+.card p {
+    font-size: 0.8rem;
+    margin: 0 20px;
+}
+
 /* FOOTER STYLES */
 footer {
     color: var(--lightgreen);
@@ -112,4 +148,8 @@ footer h2 {
 
 footer a {
     color: var(--lightgreen);
+}
+
+footer p {
+    display: inline-block;
 }
