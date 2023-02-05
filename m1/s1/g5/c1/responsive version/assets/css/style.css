@@ -1,4 +1,13 @@
 /* Your styles here */
+
+
+/* 
+############################################################################################################################################################################################################
+PER TESTARE IL LAYOUT E FAR SI CHE FOSSE PIÙ SIMILE POSSIBILE A QUELLO FORNITO, NELL'ISPECTOR HO UTILIZZATO UNA DIMESIONE DI 450PX MENTRE HO TRASCINATO IL LAYOUT FORNITO ALL'INTERNO DI UNA FINESTRA DEL BROWSER ZOOMMATA AL 250% ANNCHE SE PROBABILMENTE IL RISULTATO PIÙ FEDELE POSSIBILE SI SAREBBE OTTENUTO CON UNO ZOOM LEGGERMENTE MAGGIORE NON SELEZIONABILE DA BROWSER.
+############################################################################################################################################################################################################
+*/
+
+
 /* GENERAL STYLES */
 
 :root {
@@ -12,6 +21,14 @@
     --lightgrey: #dee1e3;
 }
 
+/* 
+########################################################################################################################################################################################################    
+DA TRACCIA IL FONT SIZE DEL BODY È DI 1.2REM COME SCRITTO DI SEGUIDO DA DOVER UTILIZZARE PRESUMO PER I PARAGRAFI CHE SONO LA MAGGIOR PARTE DEL TESTO UTILIZZATO NEL SITO MA PER RIMANERE FEDERE AL LAYOUT PER TESTARLO HO DECISO DI UTILIZZARE TALE DIMESIONE SOLO PER L'H4 SCEGLIENDO DI VOLTA IN VOLTA LA DIMENSIONE SECONDO ME PIÙ ADATTA.   
+########################################################################################################################################################################################################    
+SE UTILIZZASSI 1.2REM PER I PARAGRAFI DOVREI SOVRADIMENSIONARE O SOTTODIMESIONARE TUTTI I FONT-SIZE DI 0.2REM PER MANTENERE IL GIUSTO RAPPORTO TRA LE VARIE DIMESIONI.    
+########################################################################################################################################################################################################
+*/
+
 body {
     font-family: 'Open Sans', sans-serif;
     font-size: 1.2rem;
@@ -19,38 +36,42 @@ body {
     color: var(--grey);
 }
 
+/*
+#######################################################################################################################################################################################################     
+DA TRACCIA L'INTERLINEA PER I VARI HEADINGS È DI 1.5 MA PER RIMANERE PIÙ POSSIBILE FEDELE AL LAYOUT CREDO 1REM SIA IL VALORE OTTIMALE.    
+####################################################################################################################################################################################################### 
+*/
+
 h1,h2,h3,h4 {
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
-    /* DA TRACCIA L'INTERLINEA E'DI 1.5 MA PER RIMANERE FEDELE AL LAYOUT CREDO SIA QUESTO IL GIUSTO VALORE */
-    line-height: 1.1; 
+    line-height: 1; 
     color: var(--turquoise);
 }
 
 h1 {
-    font-size: 1.7rem;
+    font-size: 2.5rem;
     text-transform: capitalize;
     margin-bottom: 15px;
 }
 
 h2 {
-    font-size: 1.5rem;
+    font-size: 2.4rem;
     color: var(--white);
     margin-bottom: 20px;
 }
 
 h3 {
+    font-size: 1.4rem;
     margin: 35px 0 15px;
-    font-size: 1rem;
 }
 
 h4 {
-    font-size: 0.8rem;
-    margin: 15px 0 10px;
+    margin: 20px 0 15px;
 }
 
 p {
-    font-size: 1rem;
+    font-size: 1.2rem;
     margin-bottom: 20px;
 }
 
@@ -58,134 +79,160 @@ p {
     text-align: center;
 }
 
-
 img {
     max-width: 100%;
     height:auto;
 }
 
-/* HEADER STYLES */
+/* 
+#################
+# HEADER STYLES #
+#################
+*/
+
 header {
     background-color: var(--black);
-    padding: 20px;
+    padding: 30px 0;
 }
 
-/* DA RIVEDERE */
-.logo {
-    max-width: 30%;
+#logo {
+    max-width: 35%;
     height: auto
 }
-/* DA RIVEDERE */
 
-/* MAIN STYLES */
-section {
-    padding: ;
-}
+/* 
+###############
+# MAIN STYLES #
+###############
+*/
 
-.section-one {
+#section-one {
     background-image: url("../images/banner.jpg");
     background-size: cover;
-    padding: 45px 25px 35px;
+    background-position: 50%;
+    padding: 60px 25px 52px;
 }
 
-.section-two {
+#section-one p {
+    margin-bottom: 50px;
+}
+
+#cta {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--white);
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 15px 34px;
+    border-radius: 5px;
+    background-color: var(--red);
+    opacity: 0.7;
+    transition: 0.3s;
+}
+
+#cta:hover {
+    opacity: 1;
+}
+
+#cta:active {
+    color: var(--white);
+    background-color: var(--turquoise);
+}
+
+#section-two {
     padding: 30px 25px;
 }
 
-
-.section-three {
-    color: var(--white);
-}
-
-.cta {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 0.8rem;
-    font-weight: 700;
-    text-transform: uppercase;
-    text-decoration: none;
-    padding: 12px 24px;
-    border-radius: 5px;;
-    color: var(--white);
-    background-color: var(--red);
-}
-
-.cta:hover {
-    color: var(--white);
-    background-color: var(--turquoise);
+.circle-container {
+    margin: 0 40px;
 }
 
 .circle-container img {
     border-radius: 50%;
 }
 
-.section-three {
+#section-three {
+    color: var(--white);
     background-color: var(--darkred);
     padding: 60px 25px 40px;
 }
 
-.section-three h2 {
-    margin-bottom: 30px;
+#section-three h2 {
+    margin-bottom: 40px;
 }
 
-/* .section-three p {
-    margin-bottom: 0;
-} */
-
-.cite {
+#section-three p:first-of-type {
+    font-size: 1.2rem;
     font-style: italic;
-    margin-bottom: 20px;;
+    margin-bottom: 35px;
 }
 
-.author {
+#section-three p:nth-of-type(2) {
+    font-size: 1.6rem;
+    margin-bottom: 0;
+}
+
+#section-three p:nth-of-type(3) {
     font-size: 1.1rem;
-    margin-bottom: 0;
+    margin-bottom: 10px;
 }
 
-.role {
-    font-size: 0.8rem;
-    margin-bottom: 0;
-}
-/* ASEIDE STYLES */
+/* 
+################
+# ASIDE STYLES #
+################
+*/
 
 aside {
-    padding: 30px 0;
+    padding: 30px 25px 40px;
 }
+
 .card {
     border: 1px solid var(--lightgrey);
     border-radius: 5px;
-    margin: 35px 25px;
+    overflow: hidden;   
+    /* NON C'ERA NEL LAYOUT MA HO PREFERITO CHE ANCHE I BORDI SUPERIRI DELLA CARD FOSSERO SMUSSATI PERCIÒ HO AGGIUNTO QUESTA REGOLA */
+    max-width: 640px;
+    margin: 35px auto;
 }
 
 .card p {
-    font-size: 0.8rem;
-    margin: 0 20px 30px;
+    font-size: 1.1rem;
+    margin: 0 25px 40px;
 }
 
-/* FOOTER STYLES */
+/* 
+#################
+# FOOTER STYLES #
+#################
+*/
+
 footer {
     color: var(--lightgreen);
     background-color: var(--turquoise);
-    padding: 40px 0 60px;
-    font-size: 0.9rem;
+    padding: 50px 0 70px;
 }
 
 footer h2 {
     color: var(--white);
+    margin-bottom: 30px;
 }
 
 footer a {
     color: var(--lightgreen);
 }
 
-footer p {
+footer p:first-of-type {
     display: inline;
+    font-size: 1.2rem;
 }
 
-.copyright {
-    font-size: 0.8rem;
-}
-
-.separator {
+#separator {
     border-top: 1px solid white;
     margin: 30px 120px;
+}
+
+#copyright {
+    font-size: 1rem;
 }
