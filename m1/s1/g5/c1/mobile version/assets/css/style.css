@@ -117,7 +117,7 @@ header {
     margin-bottom: 50px;
 }
 
-#cta:link, #cta:hover, #cta:active, #cta:visited {
+#cta {
     font-family: 'Montserrat', sans-serif;
     font-size: 1.1rem;
     font-weight: 700;
@@ -125,11 +125,17 @@ header {
     text-transform: uppercase;
     text-decoration: none;
     padding: 15px 34px;
-    border-radius: 5px;;
+    border-radius: 5px;
     background-color: var(--red);
+    opacity: 0.7;
+    transition: 0.3s;
 }
 
 #cta:hover {
+    opacity: 1;
+}
+
+#cta:active {
     color: var(--white);
     background-color: var(--turquoise);
 }
