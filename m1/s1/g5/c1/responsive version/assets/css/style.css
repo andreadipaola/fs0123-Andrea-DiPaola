@@ -97,17 +97,15 @@ section {
     color: var(--white);
 }
 
-
-
-.cta:link, .cta:hover, .cta:active, .cta:visited {
+.cta {
     font-family: 'Montserrat', sans-serif;
     font-size: 0.8rem;
     font-weight: 700;
-    color: var(--white);
     text-transform: uppercase;
     text-decoration: none;
     padding: 12px 24px;
     border-radius: 5px;;
+    color: var(--white);
     background-color: var(--red);
 }
 

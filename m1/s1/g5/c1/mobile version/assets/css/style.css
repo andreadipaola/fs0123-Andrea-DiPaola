@@ -1,4 +1,5 @@
 /* Your styles here */
+
 /* GENERAL STYLES */
 
 :root {
@@ -23,34 +24,34 @@ h1,h2,h3,h4 {
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     /* DA TRACCIA L'INTERLINEA E'DI 1.5 MA PER RIMANERE FEDELE AL LAYOUT CREDO SIA QUESTO IL GIUSTO VALORE */
-    line-height: 1.1; 
+    line-height: 1; 
     color: var(--turquoise);
 }
 
 h1 {
-    font-size: 1.7rem;
+    font-size: 2.5rem;
     text-transform: capitalize;
     margin-bottom: 15px;
 }
 
 h2 {
-    font-size: 1.5rem;
+    font-size: 2.4rem;
     color: var(--white);
     margin-bottom: 20px;
 }
 
 h3 {
+    font-size: 1.4rem;
     margin: 35px 0 15px;
-    font-size: 1rem;
 }
 
 h4 {
-    font-size: 0.8rem;
-    margin: 15px 0 10px;
+    font-size: 1.2rem;
+    margin: 20px 0 15px;
 }
 
 p {
-    font-size: 1rem;
+    font-size: 1.4rem;
     margin-bottom: 20px;
 }
 
@@ -67,46 +68,34 @@ img {
 /* HEADER STYLES */
 header {
     background-color: var(--black);
-    padding: 20px;
+    padding: 30px 0;
 }
 
-/* DA RIVEDERE */
 .logo {
-    max-width: 30%;
+    max-width: 35%;
     height: auto
 }
-/* DA RIVEDERE */
 
 /* MAIN STYLES */
-section {
-    padding: ;
-}
-
 .section-one {
     background-image: url("../images/banner.jpg");
     background-size: cover;
-    padding: 45px 25px 35px;
+    background-position: 50%;
+    padding: 60px 25px 52px;
 }
 
-.section-two {
-    padding: 30px 25px;
+.section-one p {
+    margin-bottom: 50px;
 }
-
-
-.section-three {
-    color: var(--white);
-}
-
-
 
 .cta:link, .cta:hover, .cta:active, .cta:visited {
     font-family: 'Montserrat', sans-serif;
-    font-size: 0.8rem;
+    font-size: 1.1rem;
     font-weight: 700;
     color: var(--white);
     text-transform: uppercase;
     text-decoration: none;
-    padding: 12px 24px;
+    padding: 15px 34px;
     border-radius: 5px;;
     background-color: var(--red);
 }
@@ -116,42 +105,50 @@ section {
     background-color: var(--turquoise);
 }
 
+.section-two {
+    padding: 30px 25px;
+}
+
+.circle-container {
+    margin: 0 40px;
+}
+
 .circle-container img {
     border-radius: 50%;
 }
 
 .section-three {
+    color: var(--white);
     background-color: var(--darkred);
     padding: 60px 25px 40px;
 }
 
 .section-three h2 {
-    margin-bottom: 30px;
+    margin-bottom: 40px;
 }
 
-/* .section-three p {
-    margin-bottom: 0;
-} */
-
-.cite {
+.testimony p:nth-child(2) {
+    font-size: 1.2rem;
     font-style: italic;
-    margin-bottom: 20px;;
+    margin-bottom: 35px;
 }
 
-.author {
+.testimony p:nth-child(3) {
+    font-size: 1.6rem;
+    margin-bottom: 0;
+}
+
+.testimony p:nth-child(4) {
     font-size: 1.1rem;
-    margin-bottom: 0;
+    margin-bottom: 10px;
 }
 
-.role {
-    font-size: 0.8rem;
-    margin-bottom: 0;
-}
 /* ASEIDE STYLES */
 
 aside {
-    padding: 30px 0;
+    padding: 30px 0 40px;
 }
+
 .card {
     border: 1px solid var(--lightgrey);
     border-radius: 5px;
@@ -159,20 +156,20 @@ aside {
 }
 
 .card p {
-    font-size: 0.8rem;
-    margin: 0 20px 30px;
+    font-size: 1.1rem;
+    margin: 0 25px 40px;
 }
 
 /* FOOTER STYLES */
 footer {
     color: var(--lightgreen);
     background-color: var(--turquoise);
-    padding: 40px 0 60px;
-    font-size: 0.9rem;
+    padding: 40px 0 80px;
 }
 
 footer h2 {
     color: var(--white);
+    margin-bottom: 30px;
 }
 
 footer a {
@@ -181,10 +178,11 @@ footer a {
 
 footer p {
     display: inline;
+    font-size: 1.2rem;
 }
 
 .copyright {
-    font-size: 0.8rem;
+    font-size: 1rem;
 }
 
 .separator {
