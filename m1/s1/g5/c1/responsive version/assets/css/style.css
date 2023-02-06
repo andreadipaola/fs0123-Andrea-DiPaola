@@ -246,6 +246,18 @@ footer p:first-of-type {
 }
 
 @media screen and (min-width:1366px) and (max-width:1920px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    h3 {
+        font-size: 1.15rem;
+    }
+
+    h4 {
+        font-size: 0.9rem;
+    }
+    
     header {
         display: flex;
     }
@@ -258,32 +270,29 @@ footer p:first-of-type {
         padding: 150px 300px 150px;
         background-position: 0 0;
     }
-
-    h1 {
-        font-size: 2rem;
+    #section-one p {
+        margin-bottom: 40px;
     }
-
-    h3 {
-        font-size: 1.15rem;
-    }
-
-    h4 {
-        font-size: 0.9rem;
-    }
-
+    
     #cta {
         font-size: 0.8rem;
     }
 
     #section-two {
+        padding: 120px 0 140px 100px;
         text-align: left;
         display: grid;
         grid-template-columns: 1.5fr 1fr 0.5fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-rows: auto auto auto auto;
         grid-template-areas: "third-item first-item" "third-item second-item" "third-item fourth-item" "third-item fifth-item";
     }
 
     #section-two h3 {
+        margin-top: 0;
+    }
+
+    #section-two p {
+        font-size: 1.1rem;
         margin-top: 0;
     }
 
@@ -333,21 +342,43 @@ footer p:first-of-type {
 
     aside {
         display: flex;
-        padding: 60px 100px 100px;
+        padding: 100px 100px 130px;
     }
 
     .card {
-        margin-right: 30px;
+        margin: 0 15px;
+    }
+
+    .card p {
+        font-size: 0.9rem;
+        margin: 0 15px 30px;
+    }
+
+    footer {
+        padding: 40px 0 50px;
     }
 
     footer h2 {
-        font-size: 2.6rem;
+        font-size: 2.8rem;
     }
+    
     #contacts {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
         flex-wrap: wrap;
         align-content: center;
+    }
+
+    footer a {
+        font-size: 1rem;
+    }
+    
+    footer p:first-of-type {
+        font-size: 1rem;
+    }
+
+    #copyright {
+        font-size: 0.8rem;
     }
 }
