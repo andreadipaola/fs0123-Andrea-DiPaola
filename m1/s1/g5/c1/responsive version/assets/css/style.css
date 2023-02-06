@@ -84,11 +84,6 @@ img {
     text-align: center;
 }
 
-.flex {
-    display: flex;
-}
-
-
 /* 
 #################
 # HEADER STYLES #
@@ -341,6 +336,7 @@ footer a {
     aside {
         display: flex;
         padding: 100px 100px 130px;
+        justify-content: center;
     }
 
     .card {
