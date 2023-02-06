@@ -376,10 +376,18 @@ footer a {
         margin: 0 15px;
     }
 
+    .card img {
+        object-fit:cover;
+        overflow: hidden;
+        min-height: 20rem;
+        aspect-ratio: 4/3;
+    }
+
     .card p {
         font-size: 0.9rem;
         margin: 0 15px 30px;
     }
+
 
     /* 
     #################
