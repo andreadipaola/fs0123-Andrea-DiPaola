@@ -1,12 +1,10 @@
 /* Your styles here */
 
-
 /* 
 ############################################################################################################################################################################################################
 PER TESTARE IL LAYOUT E FAR SI CHE FOSSE PIÙ SIMILE POSSIBILE A QUELLO FORNITO, NELL'ISPECTOR HO UTILIZZATO UNA DIMESIONE DI 450PX MENTRE HO TRASCINATO IL LAYOUT FORNITO ALL'INTERNO DI UNA FINESTRA DEL BROWSER ZOOMMATA AL 250% ANNCHE SE PROBABILMENTE IL RISULTATO PIÙ FEDELE POSSIBILE SI SAREBBE OTTENUTO CON UNO ZOOM LEGGERMENTE MAGGIORE NON SELEZIONABILE DA BROWSER.
 ############################################################################################################################################################################################################
 */
-
 
 /* 
 ##################
@@ -27,7 +25,7 @@ PER TESTARE IL LAYOUT E FAR SI CHE FOSSE PIÙ SIMILE POSSIBILE A QUELLO FORNITO,
 
 /* 
 ########################################################################################################################################################################################################    
-DA TRACCIA IL FONT SIZE DEL BODY È DI 1.2REM COME SCRITTO DI SEGUIDO DA DOVER UTILIZZARE PRESUMO PER I PARAGRAFI CHE SONO LA MAGGIOR PARTE DEL TESTO UTILIZZATO NEL SITO MA PER RIMANERE FEDERE AL LAYOUT PER TESTARLO HO DECISO DI UTILIZZARE TALE DIMESIONE SOLO PER L'H4 SCEGLIENDO DI VOLTA IN VOLTA LA DIMENSIONE SECONDO ME PIÙ ADATTA.   
+DA TRACCIA IL FONT SIZE DEL BODY È DI 1.2REM COME SCRITTO DI SEGUIDO DA DOVER UTILIZZARE PRESUMO PER I PARAGRAFI CHE SONO LA MAGGIOR PARTE DEL TESTO UTILIZZATO NEL SITO MA PER RIMANERE FEDERE AL LAYOUT HO DECISO DI UTILIZZARE TALE DIMESIONE SOLO PER L'H4 SCEGLIENDO DI VOLTA IN VOLTA LA DIMENSIONE SECONDO ME PIÙ ADATTA.   
 ########################################################################################################################################################################################################    
 SE UTILIZZASSI 1.2REM PER I PARAGRAFI DOVREI SOVRADIMENSIONARE O SOTTODIMESIONARE TUTTI I FONT-SIZE DI 0.2REM PER MANTENERE IL GIUSTO RAPPORTO TRA LE VARIE DIMESIONI.    
 ########################################################################################################################################################################################################
@@ -251,10 +249,10 @@ footer a {
 @media screen and (min-width:1366px) {
 
     /* 
-##################
-# GENERAL STYLES #
-##################
-*/
+    ##################
+    # GENERAL STYLES #
+    ##################
+    */
 
     h1 {
         font-size: 2rem;
@@ -268,11 +266,11 @@ footer a {
         font-size: 0.9rem;
     }
     
-/* 
-#################
-# HEADER STYLES #
-#################
-*/
+    /* 
+    #################
+    # HEADER STYLES #
+    #################
+    */
 
     header {
         display: flex;
@@ -282,11 +280,11 @@ footer a {
         margin-left: 50px;
     }
 
-/* 
-###############
-# MAIN STYLES #
-###############
-*/
+    /* 
+    ###############
+    # MAIN STYLES #
+    ###############
+    */
 
     #section-one {
         padding: 150px 300px 150px;
@@ -361,11 +359,13 @@ footer a {
     #section-three p:nth-of-type(3) {
         font-size: 0.8rem;
     }
-/* 
-################
-# ASIDE STYLES #
-################
-*/
+
+    /* 
+    ################
+    # ASIDE STYLES #
+    ################
+    */
+
     aside {
         display: flex;
         padding: 100px 100px 130px;
@@ -380,11 +380,13 @@ footer a {
         font-size: 0.9rem;
         margin: 0 15px 30px;
     }
-/* 
-#################
-# FOOTER STYLES #
-#################
-*/
+
+    /* 
+    #################
+    # FOOTER STYLES #
+    #################
+    */
+
     footer {
         padding: 40px 0 50px;
     }
