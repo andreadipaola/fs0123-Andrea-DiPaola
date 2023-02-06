@@ -75,14 +75,19 @@ p {
     margin-bottom: 20px;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 .center-item {
     text-align: center;
 }
 
-img {
-    max-width: 100%;
-    height:auto;
+.flex {
+    display: flex;
 }
+
 
 /* 
 #################
@@ -96,8 +101,7 @@ header {
 }
 
 #logo {
-    max-width: 35%;
-    height: auto
+    max-height: 50px;
 }
 
 /* 
@@ -228,11 +232,122 @@ footer p:first-of-type {
     font-size: 1.2rem;
 }
 
-#separator {
-    border-top: 1px solid white;
-    margin: 30px 120px;
+#contacts {
+    margin: 30px 0;
+}
+
+#contacts div:last-of-type {
+    padding-bottom: 30px;
+    border-bottom: 1px solid var(--white);
 }
 
 #copyright {
     font-size: 1rem;
+}
+
+@media screen and (min-width:1366px) and (max-width:1920px) {
+    header {
+        display: flex;
+    }
+
+    #logo {
+        margin-left: 50px;
+    }
+
+    #section-one {
+        padding: 150px 300px 150px;
+        background-position: 0 0;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h3 {
+        font-size: 1.15rem;
+    }
+
+    h4 {
+        font-size: 0.9rem;
+    }
+
+    #cta {
+        font-size: 0.8rem;
+    }
+
+    #section-two {
+        text-align: left;
+        display: grid;
+        grid-template-columns: 1.5fr 1fr 0.5fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-areas: "third-item first-item" "third-item second-item" "third-item fourth-item" "third-item fifth-item";
+    }
+
+    #section-two h3 {
+        margin-top: 0;
+    }
+
+    #section-two div:nth-of-type(1) {
+        grid-area: first-item;
+    }
+
+    #section-two div:nth-of-type(2) {
+        grid-area: second-item;
+    }
+
+    #section-two div:nth-of-type(3) {
+        grid-area: third-item;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #section-two div:nth-of-type(4) {
+        grid-area: fourth-item;
+    }
+
+    #section-two div:nth-of-type(5) {
+        grid-area: fifth-item;
+    }
+
+    #section-three {
+        padding: 100px 0;
+    }
+
+    #section-three h2 {
+        font-size: 1.8rem;
+        margin-bottom: 30px;
+    }
+
+    #section-three p:first-of-type {
+        font-size: 1.8rem;
+    }
+
+    #section-three p:nth-of-type(2) {
+        font-size: 1.2rem;
+    }
+
+    #section-three p:nth-of-type(3) {
+        font-size: 0.8rem;
+    }
+
+    aside {
+        display: flex;
+        padding: 60px 100px 100px;
+    }
+
+    .card {
+        margin-right: 30px;
+    }
+
+    footer h2 {
+        font-size: 2.6rem;
+    }
+    #contacts {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        align-content: center;
+    }
 }
