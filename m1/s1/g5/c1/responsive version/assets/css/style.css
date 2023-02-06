@@ -227,25 +227,23 @@ footer a {
     color: var(--lightgreen);
 }
 
-footer p:first-of-type {
+#contacts p:first-of-type {
     display: inline;
     font-size: 1.2rem;
+    padding-bottom: 30px;
+    border-bottom: 1px solid var(--white);
 }
 
 #contacts {
     margin: 30px 0;
 }
 
-#contacts div:last-of-type {
-    padding-bottom: 30px;
-    border-bottom: 1px solid var(--white);
-}
-
 #copyright {
     font-size: 1rem;
+    margin-top: 60px;
 }
 
-@media screen and (min-width:1366px) and (max-width:1920px) {
+@media screen and (min-width:1366px) {
     h1 {
         font-size: 2rem;
     }
