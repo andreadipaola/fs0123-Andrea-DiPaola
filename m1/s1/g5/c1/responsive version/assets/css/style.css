@@ -8,7 +8,11 @@ PER TESTARE IL LAYOUT E FAR SI CHE FOSSE PIÙ SIMILE POSSIBILE A QUELLO FORNITO,
 */
 
 
-/* GENERAL STYLES */
+/* 
+##################
+# GENERAL STYLES #
+##################
+*/
 
 :root {
     --grey: #393d41;
@@ -238,7 +242,20 @@ footer a {
     margin-top: 60px;
 }
 
+/*
+#########################################################
+# MEDIA QUERY PER SCHERMI DESKTOP AL DI SOPRA DI 1366PX #
+#########################################################
+*/
+
 @media screen and (min-width:1366px) {
+
+    /* 
+##################
+# GENERAL STYLES #
+##################
+*/
+
     h1 {
         font-size: 2rem;
     }
@@ -251,6 +268,12 @@ footer a {
         font-size: 0.9rem;
     }
     
+/* 
+#################
+# HEADER STYLES #
+#################
+*/
+
     header {
         display: flex;
     }
@@ -258,6 +281,12 @@ footer a {
     #logo {
         margin-left: 50px;
     }
+
+/* 
+###############
+# MAIN STYLES #
+###############
+*/
 
     #section-one {
         padding: 150px 300px 150px;
@@ -332,7 +361,11 @@ footer a {
     #section-three p:nth-of-type(3) {
         font-size: 0.8rem;
     }
-
+/* 
+################
+# ASIDE STYLES #
+################
+*/
     aside {
         display: flex;
         padding: 100px 100px 130px;
@@ -347,7 +380,11 @@ footer a {
         font-size: 0.9rem;
         margin: 0 15px 30px;
     }
-
+/* 
+#################
+# FOOTER STYLES #
+#################
+*/
     footer {
         padding: 40px 0 50px;
     }
@@ -376,3 +413,9 @@ footer a {
         font-size: 0.8rem;
     }
 }
+
+/* 
+###################
+# END MEDIA QUERY #
+###################
+*/
