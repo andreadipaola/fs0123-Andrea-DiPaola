@@ -94,56 +94,90 @@ REGOLE
 
 // document.getElementById("risposta").innerHTML = `Le due variabili sono ${risultato}`
 
-let eta = 20;
-let color = "pink";
+
+// let eta = prompt("Per favore inserisci la tua età")
+// let color = "pink";
+
+// let eta = 17;
+
+// FUNZIONE
+function possoEntrare () {
+  let eta = prompt("Per favore inserisci la tua età");
+  if (eta < 18) {
+    document.getElementById("risposta").innerHTML = "Aspetta tra qualche anno";
+    console.log("Aspetta tra qualche anno");
+  } else if (eta >= 18 && eta <= 100) {
+    document.getElementById("risposta").innerHTML = "Puoi entrare";
+    console.log("Puoi entrare");
+  } else {
+  document.getElementById("risposta").innerHTML = "sarebbe meglio che rimanessi a casa!";
+  console.log("sarebbe meglio che rimanessi a casa!");
+  }
+}
 
 // function possoEntrare () {
-//   if (eta >= 18 && eta <= 100) {
-//     return "Puoi entrare";
-//   } else if (eta < 18) {
-//     return "Aspetta qualche anno";
-//   }
+//   let eta = prompt("Per favore inserisci la tua età");
+//   if (eta < 18) {
+//     document.getElementById("risposta").innerHTML = "Aspetta tra qualche anno";
+//     console.log("Aspetta tra qualche anno");
+//   } else if (eta >= 18 && eta <= 100) {
+//     document.getElementById("risposta").innerHTML = "Puoi entrare";
+//     console.log("Puoi entrare");
+//   } else 
+//   document.getElementById("risposta").innerHTML = "sarebbe meglio che rimanessi a casa!";
+//   console.log("sarebbe meglio che rimanessi a casa!");
 // }
+// let ingresso = possoEntrare(eta);
 
-if (eta < 18) {
-  console.log("sei minorenne");
-} else if (eta >= 18 && eta <= 70) {
-  console.log("sei grande");
-} else {
-  console.log("sei vecchio");
-} 
+// console.log(ingresso);
 
-switch(color) {
-  case "red":
-    console.log("il colore che hai scelto e il rosso");
-    break;
-  case "blue":
-    console.log("il colore che hai scelto e il blu");
-    break;
-  case "yellow":
-    console.log("il colore che hai scelto e il giallo");
-    break;
-  case "green":
-    console.log("il colore che hai scelto e il verde");
-    break;
-  default:
-    console.log("non hai selezionato alcun colore tra quelli disponibili!");
-}
+
+
+// if (eta < 18) {
+//   console.log("sei minorenne");
+// } else if (eta >= 18 && eta <= 70) {
+//   console.log("sei grande");
+// } else {
+//   console.log("sei vecchio");
+// } 
+
+
+
+// switch(color) {
+//   case "red":
+//     console.log("il colore che hai scelto e il rosso");
+//     break;
+//   case "blue":
+//     console.log("il colore che hai scelto e il blu");
+//     break;
+//   case "yellow":
+//     console.log("il colore che hai scelto e il giallo");
+//     break;
+//   case "green":
+//     console.log("il colore che hai scelto e il verde");
+//     break;
+//   default:
+//     console.log("non hai selezionato alcun colore tra quelli disponibili!");
+// }
 
 // for(let indice = 1; indice <= 10; indice++) {
 //   console.log(`hai digitato il numero ${indice}`);
 // }
 
-let numeri = [1,5,9,45,789,55];
+// let numeri = [1,5,9,45,789,55];
 // console.log(numeri.length);
 
-for (let indice = 0; indice < numeri.length; indice++) {
-  console.log(numeri[indice]);
-}
+// for (let indice = 0; indice < numeri.length; indice++) {
+//   console.log(numeri[indice]);
+// }
 
-for (let indice in numeri) {
-  console.log(numeri[indice]);
-}
+// for (let indice in numeri) {
+//   console.log(numeri[indice]);
+// }
+
+// for (let indice of numeri) {
+//   console.log(indice);
+// }
 
 // let indice3 = 1;
 
