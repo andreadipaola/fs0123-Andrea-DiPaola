@@ -88,7 +88,7 @@ REGOLE
 // let risultato = (name1 != name2) ? "Le due parole sono differenti!" : "Le due parole sono identiche";
 // console.log(risultato);
 
-// let risultato = (name1.toLowerCase != name2.toLowerCase) ? "Le due parole sono differenti!" : "Le due parole sono identiche";
+// let risultato = (name1.toLowerCase() != name2.toLowerCase()) ? "Le due parole sono differenti!" : "Le due parole sono identiche";
 // console.log(risultato);
 
 // let risultato = (name1 != name2) ? "DIVERSE!" : "identiche!";
