@@ -15,8 +15,8 @@ REGOLE
 // let dataType = ["number","string","boolean","object"];
 // console.log(dataType);
 
-// console.log(dataType[2]);
 
+// console.log(dataType[2]);
 
 
 /* ESERCIZIO 2
@@ -24,8 +24,8 @@ REGOLE
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-// const NAME = "Andrea";
-// console.log(NAME);
+// let name = "Andrea";
+// console.log(name);
 
 
 /* ESERCIZIO 3
@@ -53,16 +53,18 @@ REGOLE
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-// NAME = "Di Paola";
+// const name = "Andrea";
+// name = "Di Paola";
 
 /* ESERCIZIO 6
  Esegui una sottrazione tra i numeri 4 e la variable "x" appena dichiarata (che contiene il numero 12).
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+// let x = 12;
 // let subtraction = 4 - x;
-// console.log(Math.abs((subtraction)));
 
+// console.log(Math.abs((subtraction)));
 // let subtraction2 = x - 4;
 // console.log(subtraction2);
 
@@ -76,7 +78,6 @@ REGOLE
 /* SCRIVI QUI LA TUA RISPOSTA */
 // let name1 = "john";
 // let name2 = "John";
-
 
 // if(name1 != name2) {
 //   console.log("Le due parole sono differenti!");
@@ -95,44 +96,9 @@ REGOLE
 // document.getElementById("risposta").innerHTML = `Le due variabili sono ${risultato}`
 
 
-// let eta = prompt("Per favore inserisci la tua età")
-// let color = "pink";
+// ISTRUZUIONI CONDIZIONALI
 
-// let eta = 17;
-
-// FUNZIONE
-function possoEntrare () {
-  let eta = prompt("Per favore inserisci la tua età");
-  if (eta < 18) {
-    document.getElementById("risposta").innerHTML = "Aspetta tra qualche anno";
-    console.log("Aspetta tra qualche anno");
-  } else if (eta >= 18 && eta <= 100) {
-    document.getElementById("risposta").innerHTML = "Puoi entrare";
-    console.log("Puoi entrare");
-  } else {
-  document.getElementById("risposta").innerHTML = "sarebbe meglio che rimanessi a casa!";
-  console.log("sarebbe meglio che rimanessi a casa!");
-  }
-}
-
-// function possoEntrare () {
-//   let eta = prompt("Per favore inserisci la tua età");
-//   if (eta < 18) {
-//     document.getElementById("risposta").innerHTML = "Aspetta tra qualche anno";
-//     console.log("Aspetta tra qualche anno");
-//   } else if (eta >= 18 && eta <= 100) {
-//     document.getElementById("risposta").innerHTML = "Puoi entrare";
-//     console.log("Puoi entrare");
-//   } else 
-//   document.getElementById("risposta").innerHTML = "sarebbe meglio che rimanessi a casa!";
-//   console.log("sarebbe meglio che rimanessi a casa!");
-// }
-// let ingresso = possoEntrare(eta);
-
-// console.log(ingresso);
-
-
-
+// IF, ELSE IF...
 // if (eta < 18) {
 //   console.log("sei minorenne");
 // } else if (eta >= 18 && eta <= 70) {
@@ -141,8 +107,8 @@ function possoEntrare () {
 //   console.log("sei vecchio");
 // } 
 
-
-
+// SWITCH
+// let color = "pink";
 // switch(color) {
 //   case "red":
 //     console.log("il colore che hai scelto e il rosso");
@@ -160,25 +126,33 @@ function possoEntrare () {
 //     console.log("non hai selezionato alcun colore tra quelli disponibili!");
 // }
 
+// CICLI
+
+// CICLO FOR
 // for(let indice = 1; indice <= 10; indice++) {
 //   console.log(`hai digitato il numero ${indice}`);
 // }
 
+// DIFFERENZE TRA VARI CICLI FOR
 // let numeri = [1,5,9,45,789,55];
 // console.log(numeri.length);
 
+// CICLO "FOR"
 // for (let indice = 0; indice < numeri.length; indice++) {
 //   console.log(numeri[indice]);
 // }
 
+// CICLO "FOR IN"
 // for (let indice in numeri) {
 //   console.log(numeri[indice]);
 // }
 
+// CICLO "FOR OF"
 // for (let indice of numeri) {
 //   console.log(indice);
 // }
 
+// DIFFERENZE TRA CICLO "DO" E CICLO "DO WHILE"
 // let indice3 = 1;
 
 // while (indice3 < 1) {
@@ -190,3 +164,19 @@ function possoEntrare () {
 //   console.log(indice3);  //1 e stampa
 //   indice3++;             //2
 //  } while (indice3 < 1);  //2
+
+
+// FUNZIONI
+function possoEntrare () {
+  let eta = prompt("Per favore inserisci la tua età");
+  if (eta < 18) {
+    document.getElementById("risposta").innerHTML = "Aspetta tra qualche anno";
+    console.log("Aspetta tra qualche anno");
+  } else if (eta >= 18 && eta <= 100) {
+    document.getElementById("risposta").innerHTML = "Puoi entrare";
+    console.log("Puoi entrare");
+  } else {
+  document.getElementById("risposta").innerHTML = "sarebbe meglio che rimanessi a casa!";
+  console.log("sarebbe meglio che rimanessi a casa!");
+  }
+}
