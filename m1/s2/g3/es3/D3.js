@@ -90,6 +90,18 @@
 // }
 // console.log(totalShoppingCart);
 
+let carrello = 51;
+let totale = carrello + spedizioni(carrello);
+
+function spedizioni(a) {
+  if(a > 50) {
+    return 0;
+  } else {
+    return 10;
+  }
+}
+console.log(totale);
+
 /* ESERCIZIO 6
   Stai lavorando su un sito di e-commerce. Oggi è il Black Friday e viene applicato il 20% su ogni prodotto.
   Modifica la risposta precedente includendo questa nuova promozione nell'algoritmo, determinando come prima se le spedizioni sono gratuite oppure no e e calcolando il totale.
@@ -114,6 +126,27 @@
 
 // console.log(totalShoppingCart2);
 
+// function sconto(a) {
+//   return a - (a*20/100);
+// }
+
+// function spedizioni(a) {
+//   if(a > 50) {
+//     return 0;
+//   } else {
+//     return 10;
+//   }
+// }
+
+// let prezzoOriginale = 70;
+
+// let prezzoScontato = sconto(prezzoOriginale);
+
+// let totale = prezzoScontato + spedizioni(prezzoScontato);
+
+
+// console.log(totale);
+
 /* ESERCIZIO 7
   Crea tre variabili, e assegna un valore numerico a ciascuna di esse.
   Utilizzando un blocco condizionale, crea un algoritmo per ordinarle secondo il loro valore, dal più alto al più basso.
@@ -137,13 +170,13 @@
 
 // let num12 = '56';
 
-// // function isNumber(a) {
-// //   if (isNaN(a) == false) {
-// //     return (`${a} è un numero`)
-// //   } else {
-// //     return (`${a} non è un numero`)
-// //   }
-// // }
+// function isNumber(a) {
+//   if (isNaN(a) == false) {
+//     return (`${a} è un numero`)
+//   } else {
+//     return (`${a} non è un numero`)
+//   }
+// }
 
 // function isNumber(a) {
 //   if (typeof(a) == 'number') {
