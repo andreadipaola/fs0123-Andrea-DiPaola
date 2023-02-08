@@ -90,17 +90,17 @@
 // }
 // console.log(totalShoppingCart);
 
-let carrello = 51;
-let totale = carrello + spedizioni(carrello);
+// let carrello = 51;
+// let totale = carrello + spedizioni(carrello);
 
-function spedizioni(a) {
-  if(a > 50) {
-    return 0;
-  } else {
-    return 10;
-  }
-}
-console.log(totale);
+// function spedizioni(a) {
+//   if(a > 50) {
+//     return 0;
+//   } else {
+//     return 10;
+//   }
+// }
+// console.log(totale);
 
 /* ESERCIZIO 6
   Stai lavorando su un sito di e-commerce. Oggi è il Black Friday e viene applicato il 20% su ogni prodotto.
