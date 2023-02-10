@@ -13,28 +13,29 @@
 </head>
 
 <body>
+    <p class="test"></p>
     <div class="container">
 
         <div class="calculator">
             <div class="display">0</div>
             <div class="keys">
-                <button class="key operators">&plus;</button>
-                <button class="key operators">&minus;</button>
-                <button class="key operators">&times;</button>
-                <button class="key operators">&divide;</button>
-                <button class="key">7</button>
-                <button class="key">8</button>
-                <button class="key">9</button>
-                <button class="key">4</button>
-                <button class="key">5</button>
-                <button class="key">6</button>
-                <button class="key">1</button>
-                <button class="key">2</button>
-                <button class="key">3</button>
-                <button class="key">0</button>
-                <button class="key">.</button>
-                <button class="key">AC</button>
-                <button class="key result">=</button>
+                <button class="key operators" onclick="aggiungiSimbolo(this)">&plus;</button>
+                <button class="key operators" onclick="aggiungiSimbolo(this)">&minus;</button>
+                <button class="key operators" onclick="aggiungiSimbolo(this)">&times;</button>
+                <button class="key operators" onclick="aggiungiSimbolo(this)">&divide;</button>
+                <button class="key" onclick="aggiungiSimbolo(this)">7</button>
+                <button class="key" onclick="aggiungiSimbolo(this)">8</button>
+                <button class="key" onclick="aggiungiSimbolo(this)">9</button>
+                <button class="key" onclick="aggiungiSimbolo(this)">4</button>
+                <button class="key" onclick="aggiungiSimbolo(this)">5</button>
+                <button class="key" onclick="aggiungiSimbolo(this)">6</button>
+                <button class="key" data-simbolo="1" onclick="aggiungiSimbolo(this)">1</button>
+                <button class="key" onclick="aggiungiSimbolo(this)">2</button>
+                <button class="key" onclick="aggiungiSimbolo(this)">3</button>
+                <button class="key" onclick="aggiungiSimbolo(this)">0</button>
+                <button class="key" onclick="aggiungiSimbolo(this)">.</button>
+                <button class="key" onclick="aggiungiSimbolo(this)">AC</button>
+                <button class="key result" onclick="aggiungiSimbolo(this)">=</button>
             </div>
         </div>
 
