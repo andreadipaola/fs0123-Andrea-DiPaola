@@ -1,16 +1,20 @@
-// document.getElementById("test").innerHTML = "<br>Ciao</br>";
-document.getElementsByClassName("test").textContent = "ciao";
-
 function aggiungiSimbolo(elemento){
     //let simbolo = elemento.textContent;
     let simbolo = elemento.getAttribute('data-simbolo');
-
-    let display = document.querySelector('#display');
-    display.value += simbolo;
+    let display = document.querySelector('.display');
+    console.log(simbolo);
+    display.textContent += simbolo;
 }
 
 function totale(){
-    let display = document.querySelector('#display');
+    let display = document.querySelector('.display');
+    display.textContent = eval(display.textContent);
+    console.log(display.textContent);
+}
 
-    display.value = eval(display.value);
+function clear(){
+    let display = document.querySelector('.display');
+    display.textContent = "";
+    console.log(display.textContent);
+
 }

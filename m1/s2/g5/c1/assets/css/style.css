@@ -6,6 +6,7 @@
 
 body {
     font-family: 'Livvic', sans-serif;
+    color: black;
     
 }
 
@@ -21,17 +22,20 @@ body {
 .calculator {
     border-radius: 10px;
     width: 22rem;
-    /* DA CONTROLLARE */
     overflow: hidden;
     box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15), 0px 2px 4px 0px rgba(0, 0, 0, 0.12);
 }
 
 .display {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 4rem;
     font-size: 3rem;
-    text-align: right;
+    /* text-align: right; */
     background-color: #023047;
     color: #fff;
-    padding: 0.5rem 0.75rem 0.5rem 0;
+    padding: 0.5rem 0.75rem;
 }
 
 .keys {
