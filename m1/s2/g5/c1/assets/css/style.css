@@ -6,7 +6,6 @@
 
 body {
     font-family: 'Livvic', sans-serif;
-    color: black;
     
 }
 
@@ -15,7 +14,6 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: rgb(29, 53, 87);
     background: linear-gradient(45deg, rgba(29, 53, 87, 1) 0%, rgba(69, 123, 157, 1) 35%, rgba(168, 218, 220, 1) 100%);
 }
 
