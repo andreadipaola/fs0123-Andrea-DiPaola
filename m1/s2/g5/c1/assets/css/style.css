@@ -42,7 +42,7 @@ body {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 0.5px;
-    background-color: #8ecae6;
+    /* background-color: #8ecae6; */
 }
 
 .key {
