@@ -12,9 +12,17 @@ function totale(){
     console.log(display.textContent);
 }
 
-function clear(){
-    let display = document.querySelector('.display');
-    display.textContent = "";
-    console.log(display.textContent);
 
+const button = document.getElementById('btn');
+console.log(button);
+
+
+
+const ac_key = document.querySelector(".clear");
+
+ac_key.addEventListener("click", clear_display);
+
+function clear_display(e) {
+    console.log(e.target.value);
+    document.querySelector(".display").innerText = "";
 }
