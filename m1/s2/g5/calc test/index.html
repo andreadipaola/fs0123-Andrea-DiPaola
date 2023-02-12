@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Livvic&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Andrea's Calculator</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="calculator">
+            <div class="display"></div>
+            <div class="keys">
+                <button class="key operators" data-simbolo="+" onclick="aggiungiSimbolo(this)">&plus;</button>
+                <button class="key operators" data-simbolo="-" onclick="aggiungiSimbolo(this)">&minus;</button>
+                <button class="key operators" data-simbolo="*" onclick="aggiungiSimbolo(this)">&times;</button>
+                <button class="key operators" data-simbolo="/" onclick="aggiungiSimbolo(this)">&divide;</button>
+                <button class="key" data-simbolo="7" onclick="aggiungiSimbolo(this)">7</button>
+                <button class="key" data-simbolo="8" onclick="aggiungiSimbolo(this)">8</button>
+                <button class="key" data-simbolo="9" onclick="aggiungiSimbolo(this)">9</button>
+                <button class="key" data-simbolo="4" onclick="aggiungiSimbolo(this)">4</button>
+                <button class="key" data-simbolo="5" onclick="aggiungiSimbolo(this)">5</button>
+                <button class="key" data-simbolo="6" onclick="aggiungiSimbolo(this)">6</button>
+                <button class="key" data-simbolo="1" onclick="aggiungiSimbolo(this)">1</button>
+                <button class="key" data-simbolo="2" onclick="aggiungiSimbolo(this)">2</button>
+                <button class="key" data-simbolo="3" onclick="aggiungiSimbolo(this)">3</button>
+                <button class="key" data-simbolo="0" onclick="aggiungiSimbolo(this)">0</button>
+                <button class="key" data-simbolo="." onclick="aggiungiSimbolo(this)">.</button>
+                <button class="key clear" data-simbolo="AC" onclick="clear()">AC</button>
+                <button class="key result" data-simbolo="=" onclick="totale()">=</button>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

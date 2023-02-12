@@ -13,32 +13,32 @@
 </head>
 
 <body>
-    <div class="container">
+    <form id="form">
         <div class="calculator">
-            <div class="display"></div>
+            <input id="display" type="text" value="0" maxlength="9"disabled>
             <div class="keys">
-                <button class="key operators" data-simbolo="+" onclick="aggiungiSimbolo(this)">&plus;</button>
-                <button class="key operators" data-simbolo="-" onclick="aggiungiSimbolo(this)">&minus;</button>
-                <button class="key operators" data-simbolo="*" onclick="aggiungiSimbolo(this)">&times;</button>
-                <button class="key operators" data-simbolo="/" onclick="aggiungiSimbolo(this)">&divide;</button>
-                <button class="key" data-simbolo="7" onclick="aggiungiSimbolo(this)">7</button>
-                <button class="key" data-simbolo="8" onclick="aggiungiSimbolo(this)">8</button>
-                <button class="key" data-simbolo="9" onclick="aggiungiSimbolo(this)">9</button>
-                <button class="key" data-simbolo="4" onclick="aggiungiSimbolo(this)">4</button>
-                <button class="key" data-simbolo="5" onclick="aggiungiSimbolo(this)">5</button>
-                <button class="key" data-simbolo="6" onclick="aggiungiSimbolo(this)">6</button>
-                <button class="key" data-simbolo="1" onclick="aggiungiSimbolo(this)">1</button>
-                <button class="key" data-simbolo="2" onclick="aggiungiSimbolo(this)">2</button>
-                <button class="key" data-simbolo="3" onclick="aggiungiSimbolo(this)">3</button>
-                <button class="key" data-simbolo="0" onclick="aggiungiSimbolo(this)">0</button>
-                <button class="key" data-simbolo="." onclick="aggiungiSimbolo(this)">.</button>
-                <button class="key clear" data-simbolo="AC" onclick="clear()">AC</button>
-                <button class="key result" data-simbolo="=" onclick="totale()">=</button>
+                <button data-type="clear" type="reset" value="clear" class="key addictional-operators">AC</button>
+                <button data-type="operator" value="invert" class="key addictional-operators">&plusmn;</button>
+                <button data-type="operator" value="%" class="key addictional-operators">&percnt;</button>
+                <button data-type="operator" value="/" class="key operators">&divide;</button>
+                <button data-type="operand" value="7" class="key">7</button>
+                <button data-type="operand" value="8" class="key">8</button>
+                <button data-type="operand" value="9" class="key">9</button>
+                <button data-type="operator" value="*" class="key operators">&times;</button>
+                <button data-type="operand" value="4" class="key">4</button>
+                <button data-type="operand" value="5" class="key">5</button>
+                <button data-type="operand" value="6" class="key">6</button>
+                <button data-type="operator" value="-" class="key operators">&minus;</button>
+                <button data-type="operand" value="1" class="key">1</button>
+                <button data-type="operand" value="2" class="key">2</button>
+                <button data-type="operand" value="3" class="key">3</button>
+                <button data-type="operator" value="+" class="key operators">&plus;</button>
+                <button data-type="operand" value="0" class="key zero">0</button>
+                <button data-type="operand" value="." class="key">.</button>
+                <button data-type="operator" value="=" class="key result">=</button>
             </div>
         </div>
-
-    </div>
-
+    </form>
     <script src="assets/js/script.js"></script>
 </body>
 
