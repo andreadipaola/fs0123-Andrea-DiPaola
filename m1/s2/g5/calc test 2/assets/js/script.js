@@ -42,7 +42,59 @@ operatorsKeys.forEach((key) => {
         // e.currentTarget.classList.add("active");
 
         switch (e.target.value) {
-            //operatori prima riga
+            case "x2":
+                display.value = Math.pow(display.value, 2);
+                break;
+            case "x3":
+                display.value = Math.pow(display.value, 3);
+                break;
+            case "%":
+                display.value = parseFloat(display.value) / 100;
+                break;
+            case "invert":
+                display.value = parseFloat(display.value) * -1;
+                break;
+            case "=":
+                expression.push(display.value);
+                display.value = eval(expression.join(""));
+                // console.log(display.value);
+                // display.value = new Function("return 2 * 2");
+                expression = [];
+                break;
+            case "x2":
+                display.value = Math.pow(display.value, 2);
+                break;
+            case "x3":
+                display.value = Math.pow(display.value, 3);
+                break;
+            // case 'xy':
+            //     //dispVal to the y power
+            //     processOperator(inputObj);
+            //     break;
+            case "ex":
+                display.value = Math.pow(Math.E, display.value);
+                break;
+            case "10x":
+                display.value = Math.pow(10, display.value);
+                break;
+            case "1x":
+                display.value = 1 / display.value;
+                break;
+            case "2x":
+                display.value = Math.sqrt(display.value);
+                break;
+            case "3x":
+                display.value = Math.cbrt(display.value);
+                break;
+            case "ln":
+                display.value = Math.log(display.value);
+                break;
+            case "log10":
+                display.value = Math.log10(display.value);
+                break;
+            case "x!":
+                display.value = factorialize(display.value);
+                break;
             case "sin":
                 display.value = Math.sin(display.value);
                 break;
@@ -52,37 +104,9 @@ operatorsKeys.forEach((key) => {
             case "tan":
                 display.value = Math.tan(display.value);
                 break;
-            case "x2":
-                display.value = Math.pow(display.value, 2);
+            case "e":
+                display.value = Math.E;
                 break;
-            case "x3":
-                display.value = Math.pow(display.value, 3);
-                break;
-            case "invert":
-                display.value = parseFloat(display.value) * -1;
-                break;
-            case "%":
-                display.value = parseFloat(display.value) / 100;
-                break;
-
-            //operatori seconda riga
-            case "sininv":
-                display.value = Math.asin(display.value);
-                break;
-            case "cosinv":
-                display.value = Math.acos(display.value);
-                break;
-            case "taninv":
-                display.value = Math.atan(display.value);
-                break;
-            case "2x":
-                display.value = Math.sqrt(display.value);
-                break;
-            case "3x":
-                display.value = Math.cbrt(display.value);
-                break;
-
-            //operatori terza riga
             case "sinh":
                 display.value = Math.sinh(display.value);
                 break;
@@ -92,50 +116,11 @@ operatorsKeys.forEach((key) => {
             case "tanh":
                 display.value = Math.tanh(display.value);
                 break;
-            case "1x":
-                display.value = 1 / display.value;
-                break;
-            case "x!":
-                display.value = factorialize(display.value);
-                break;
-
-            //operatori quarta riga
-            case "sinhinv":
-                display.value = Math.asinh(display.value);
-                break;
-            case "coshinv":
-                display.value = Math.acosh(display.value);
-                break;
-            case "tanhinv":
-                display.value = Math.atanh(display.value);
-                break;
-            case "10x":
-                display.value = Math.pow(10, display.value);
-                break;
-            case "log10":
-                display.value = Math.log10(display.value);
-                break;
-
-            //operatori quinta riga
             case "pi":
                 display.value = Math.PI;
                 break;
-            case "e":
-                display.value = Math.E;
-                break;
-            case "ln":
-                display.value = Math.log(display.value);
-                break;
-            case "ex":
-                display.value = Math.pow(Math.E, display.value);
-                break;
             case "rand":
                 display.value = Math.random();
-                break;
-            case "=":
-                expression.push(display.value);
-                display.value = eval(expression.join(""));
-                expression = [];
                 break;
             default:
                 let last_item = expression[expression.length - 1];
