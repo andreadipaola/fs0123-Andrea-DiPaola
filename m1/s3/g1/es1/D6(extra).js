@@ -6,7 +6,27 @@
  La funzione deve inoltre ritornare la somma di tutti i valori maggiori di 5.
 */
 
+console.log('extra')
 /* SCRIVI QUI LA TUA RISPOSTA */
+
+
+console.log(array)
+function checkArray (array){
+
+    let somma = 0
+    for (let numero of array){
+        if (numero > 5) {
+            
+            somma += numero
+            console.log('è maggiore di 5')
+        } else {
+            console.log('è minore uguale di 5')
+        }
+    }
+    console.log(somma)
+}
+
+checkArray(array)
 
 /* EXTRA 2
  Nel tuo eCommerce disponi di un'array di oggetti chiamato "shoppingCart". Ognuno di questi oggetti ha le seguenti proprietà: "price", "name", "id" e "quantity".
@@ -15,12 +35,66 @@
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
+let shoppingCart = [
+    {
+      price: 5,
+      name:  'portafoglio',
+      id: 0124,
+      quantity: 9,
+    },
+    {
+        price: 7,
+        name:  'portafoglio',
+        id: 0123,
+        quantity: 3,
+    },
+    {
+        price: 2,
+        name:  'portafoglio',
+        id: 0122,
+        quantity: 1,
+    },
+    {
+        price: 6,
+        name:  'portafoglio',
+        id: 0121,
+        quantity: 8,
+    }
+]
+
+ 
+
+function shoppingCartTotal (){
+    let somma=0;
+    for (let i = 0 ; i<shoppingCart.length;i++){
+        somma += shoppingCart[i].price * shoppingCart[i].quantity
+    }
+    return somma
+}
+
+console.log(shoppingCartTotal())
+
 /* EXTRA 3
  Nel tuo eCommerce disponi di un'array di oggetti chiamato "shoppingCart". Ognuno di questi oggetti ha le seguenti proprietà: "price", "name", "id" e "quantity".
  Crea una funzione chiamata "addToShoppingCart" che riceve un nuovo oggetto dello stesso tipo, lo aggiunge a "shoppingCart" e ritorna il nuovo numero totale degli elementi.
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+function Carrello (price,name,id,quantity) {
+    this.price =price;
+    this.name=name;
+    this.id= id ;
+    this.quantity = quantity;
+}
+
+function addToShoppingCart (){
+    console.log(shoppingCart)
+    shoppingCart.push(new Carrello(10,'shampoo',0126,2))
+    console.log(shoppingCartTotal())
+}
+addToShoppingCart()
+
+
 
 /* EXTRA 4
  Nel tuo eCommerce disponi di un'array di oggetti chiamato "shoppingCart". Ognuno di questi oggetti ha le seguenti proprietà: "price", "name", "id" e "quantity".
