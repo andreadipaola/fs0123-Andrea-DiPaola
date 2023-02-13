@@ -1,3 +1,11 @@
+/*
+#############################################################################################################################################################
+HO TESTATO IL FUNZIONAMENTO DELLE VARIE FUNZIONI, NELLO SPECIFICO DI QUELLE SCIENTIFICHE CONFRONTANDO I RISULTATI CSIA CON LA CALCOLATRICE INEGRATA NEL MIO SISTEMA OPERATIVO (macOS) SIA CON QUELLA DI ONLINE GOOGLE. I RISULTATI SONO IDENTICI A QUELLI FORNITI DALLA CALCOLATRICE DI GOOGLE PER CUI HO PREFERITO PRENDERE COME RIFERIMENTO QUELLA. PER QUANTO RIGUARDA I RISULTATI OTTENUTI DALLA CALCOLATRICE DEL MIO SISTEMA OPERATIVO SEMBREREBBE PRENDERE COME ARGOMENTO VALORI IN RADIANTI PER LE FUNZIONI sin(x), cos(x), tan(x) asin(x), acos(x), atan(x) PER CUI OTTENGO VALORI DISCREPANTI.
+#############################################################################################################################################################
+*/
+
+
+
 const display = document.querySelector("#display"); //seleziono il display
 const form = document.querySelector("form"); //seleziono il form
 const operandsKeys = document.querySelectorAll("button[data-type=operand]"); //seleziono tutti gli operandi e li salvo in un array
@@ -39,7 +47,6 @@ operandsKeys.forEach((key) => {
 //OPERATORI: TUTTI GLI ALTRI TASTI
 operatorsKeys.forEach((key) => {
     key.addEventListener("click", (e) => {
-        // e.currentTarget.classList.add("active");
 
         switch (e.target.value) {
             //operatori prima riga
@@ -156,7 +163,7 @@ operatorsKeys.forEach((key) => {
 });
 
 
-//funzione per trovare il fattoriale di un numero
+//Ccalcola il fattoriale di un numero
 function factorialize(num) {
     if (num < 0)
         return -1;
