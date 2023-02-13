@@ -5,7 +5,7 @@
 }
 
 :root {
-    --litghblue: #8ecae6;
+    --litghtblue: #8ecae6;
     --turquoise: #219ebc;
     --blue: #023047;
     --yellow: #ffb703;
@@ -16,26 +16,49 @@
 
 body {
     height: 100vh;
-    /* mobile viewport bug fix */
-    font-family: 'Livvic', sans-serif;
-    background: linear-gradient(45deg, rgba(29, 53, 87, 1) 0%, rgba(69, 123, 157, 1) 35%, rgba(168, 218, 220, 1) 100%);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
+    font-family: 'Livvic', sans-serif;
+    color: var(--white);
+    background: linear-gradient(45deg, rgba(29, 53, 87, 1) 0%, rgba(69, 123, 157, 1) 35%, rgba(168, 218, 220, 1) 100%);
 }
 
 h1 {
     font-size: 3rem;
     font-weight: 600;
     margin-bottom: 3rem;
-    color: var(--white);
+}
+
+#legend {
+    margin-top: 3rem;
+    border-radius: 10px;
+    padding: 1rem;
+    background-color: var(--litghtblue);
+    box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15), 0px 2px 4px 0px rgba(0, 0, 0, 0.12);
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: var(--blue);
+}
+
+
+ul li {
+    list-style: none;
+    font-size: 1.2rem;
+    color: var(--blue);
+}
+
+ul li span {
+    color: var(--turquoise);
+    font-weight: 600;
 }
 
 .calculator {
     border-radius: 10px;
-    /* width: 22rem; */
     overflow: hidden;
     box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15), 0px 2px 4px 0px rgba(0, 0, 0, 0.12);
 }
@@ -51,10 +74,16 @@ h1 {
     padding: 0 1rem;
 }
 
+#copyright {
+    margin-top: 3rem;
+}
+
 .keys {
     display: grid;
     grid-template-columns: repeat(9, 1fr);
-        /* background-color: #8ecae6; */
+    gap: 0.5px;
+    /* background-color: var(--white); */
+    background-color: var(--blue);
 }
 
 .key {
@@ -89,19 +118,5 @@ h1 {
 }
 
 .scientific-operator {
-    background-color: var(--litghblue);
-}
-
-@media screen and (max-width: 960px) {
-    h1 {
-        display: none;
-    }
-
-    .calculator {
-        border-radius: 0;
-    }
-
-    .key {
-        font-size: 1.3rem;
-    }
+    background-color: var(--litghtblue);
 }

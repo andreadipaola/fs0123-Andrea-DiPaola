@@ -5,7 +5,6 @@ HO TESTATO IL FUNZIONAMENTO DELLE VARIE FUNZIONI, NELLO SPECIFICO DI QUELLE SCIE
 */
 
 
-
 const display = document.querySelector("#display"); //seleziono il display
 const form = document.querySelector("form"); //seleziono il form
 const operandsKeys = document.querySelectorAll("button[data-type=operand]"); //seleziono tutti gli operandi e li salvo in un array
