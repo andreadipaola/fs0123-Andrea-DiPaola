@@ -13,15 +13,17 @@
     --white: #fff;
 }
 
+
 body {
     height: 100vh;
+    /* mobile viewport bug fix */
     font-family: 'Livvic', sans-serif;
     background: linear-gradient(45deg, rgba(29, 53, 87, 1) 0%, rgba(69, 123, 157, 1) 35%, rgba(168, 218, 220, 1) 100%);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
+
 }
 
 h1 {
@@ -52,8 +54,7 @@ h1 {
 .keys {
     display: grid;
     grid-template-columns: repeat(9, 1fr);
-    grid-gap: 0.5px;
-    /* background-color: #8ecae6; */
+        /* background-color: #8ecae6; */
 }
 
 .key {
@@ -91,6 +92,16 @@ h1 {
     background-color: var(--litghblue);
 }
 
-.todo {
-    background-color: tomato;
+@media screen and (max-width: 960px) {
+    h1 {
+        display: none;
+    }
+
+    .calculator {
+        border-radius: 0;
+    }
+
+    .key {
+        font-size: 1.3rem;
+    }
 }
