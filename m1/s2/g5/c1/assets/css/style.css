@@ -75,10 +75,6 @@ ul li span {
     padding: 0 1rem;
 }
 
-#copyright {
-    margin-top: 3rem;
-}
-
 .keys {
     display: grid;
     grid-template-columns: repeat(9, 1fr);
@@ -120,4 +116,8 @@ ul li span {
 
 .scientific-operator {
     background-color: var(--litghtblue);
+}
+
+#copyright {
+    margin-top: 3rem;
 }
