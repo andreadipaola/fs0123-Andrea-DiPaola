@@ -1,20 +1,20 @@
-// function cutString(stringa) {
+function cutString(stringa) {
 
-//     return stringa.slice(1, -1)
+    return stringa.slice(1, -1)
 
-// }
+}
 
 // console.log(cutString('Hello World'))
 
 
-function cutString(stringa) {
+// function cutString(stringa) {
 
-    return stringa.splice(0,1);
+//     return stringa.splice(0,1);
 
-}
+// }
 
 
-console.log(cutString("Hello World"));
+// console.log(cutString("Hello World"));
 
 // function cutString(stringa) {
 
