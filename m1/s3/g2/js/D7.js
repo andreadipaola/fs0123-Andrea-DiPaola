@@ -1,49 +1,182 @@
+let prova =[1,2,3,4,5]
+
 /* ESERCIZIO 1
   Scrivi una funzione per concatenare due stringhe ricevute come parametri, selezionando solamente i primi 2 caratteri della
   prima e gli ultimi 3 della seconda. Converti la stringa risultante in maiuscolo e mostrala con un console.log().
 */
 
+
+function concatenamento(stg1,stg2){
+    console.log((stg1.substr(0,2)+ stg2.substr(-3,3)).toUpperCase())
+}
+
+concatenamento('epicode','school')
+
 /* ESERCIZIO 2
   Scrivi una funzione per creare un array di soli valori DISPARI da 1 a 100.
  */
+
+function numeriDispari(){
+  let array=[]
+  for(let i= 0;i<= 100;i++){
+    if(i % 2 !== 0){
+      array +=  i+','
+    }
+  }
+  return array
+} 
+console.log(numeriDispari())
 
 /* ESERCIZIO 3
   Scrivi una funzione per creare un array di soli valori multipli di 5, da 1 a 100.
  */
 
+function multipli5(){
+  let array=[]
+  for(let i= 1;i<= 100;i++){
+    if(i % 5 == 0){
+      array +=  i+','
+    }
+  }
+  return array
+}
+console.log(multipli5())
+
 /* ESERCIZIO 4
   Scrivi una funzione per creare un array di 10 elementi; ognuno di essi deve essere un valore random compreso tra 0 e 100 (incluso).
  */
-
+  
+  function random(){
+    let array=[]
+    for(let i= 1;i<= 10;i++){
+      array.push(Math.floor((Math.random()*100)))
+    }
+    return array
+  }
+  
+  let numeroRandomico= random()
+  console.log(random())
 /* ESERCIZIO 5
   Scrivi una funzione per ricavare solamente i valori PARI da un array composto da soli valori numerici.
  */
 
+  function numeriPari (a){
+    let newArray=[]
+    for (let numero of a){
+    if(numero % 2 == 0){
+      newArray.push(numero)
+    }
+    }
+    return newArray
+  }
+
+  console.log(numeriPari(random()))
 /* ESERCIZIO 6
   Scrivi una funzione per sommare a catena i numeri contenuti in un array.
  */
 
+
+function sommaCatena(array){
+let somma = 0
+for(let numeri of array){
+  somma += numeri
+}
+return somma
+}
+
+console.log(sommaCatena(random()))
 /* ESERCIZIO 7
   Scrivi una funzione per incrementare di 1 tutti i valori numerici in un array.
 */
+
+function incremento(array){
+let newArray=[]
+for (numero of array) {
+  newArray.push( numero+1)
+
+}
+return newArray
+}
+
+console.log(numeroRandomico,'NUMERO RANDOMICO')
+console.log(incremento(numeroRandomico))
 
 /* ESERCIZIO 8
   Sostituisci ogni stringa contenuta in un array con un numero rappresentante la sua lunghezza.
   es.: ["EPICODE", "is", "great"] => [7, 2, 5]
 */
+let arrayParole=["EPICODE", "is", "great"];
+function sostituzione(array){
+let newArray=[];
+for(stringa of array){
+
+  newArray.push(stringa.length)
+}
+return newArray
+}
+
+console.log(sostituzione(arrayParole))
 
 /* ESERCIZIO 9 (EXTRA)
   Scrivi una funzione per eliminare solo i valori PARI da un array.
 */
 
+function eliminarePari (a){
+  let newArray=[]
+  for (let numero of a){
+  if(numero % 2 == 0){
+    continue
+  }else{
+    newArray.push(numero)
+  }
+  }
+  return newArray
+}
+console.log(eliminarePari(numeroRandomico))
+
 /* ESERCIZIO 10 (EXTRA)
   Scrivi una funzione per creare un array di 10 elementi; ognuno di essi deve essere un valore random compreso tra 0 e 10 (incluso), SENZA AMMETTERE DUPLICATI.
  */
+
+ /* function randomNoDuplicati(){
+    let array=[]
+    let arrayDefinitivo=[]
+    for(let i= 0;i<= 10;i++){ 
+      array.push(Math.floor((Math.random()*10)))
+    }
+    for(let i= 0;i<= 10;i++){
+      if(numero !== array[i]){
+        arrayDefinitivo.push(numero)
+      }
+    }
+    return arrayDefinitivo
+  }
+
+  console.log(randomNoDuplicati())*/
+
+  function randomDuplicati() {
+    let arr = [];
+    while (arr.length < 10) {
+      let randomNum = Math.floor(Math.random() * 10);
+      if (!arr.includes(randomNum)) { 
+        arr.push(randomNum); 
+      }
+    }
+    return arr;
+  }
+     console.log(randomDuplicati());
 
 /* ESERCIZIO 11 (EXTRA)
   Scrivi un algoritmo in grado di invertire un array.
   es: [1, 3, 5] ==> [5, 3, 1]
 */
+
+function reverse(array){
+ let newArray=array.reverse()
+ return newArray
+}
+
+console.log(reverse(numeroRandomico))
 
 /* Questo array di film verrà usato negli esercizi a seguire. Non modificarlo e scorri oltre per riprendere gli esercizi :) */
 const movies = [
@@ -165,18 +298,50 @@ const movies = [
   Scrivi una funzione per trovare il film più vecchio nell'array fornito.
 */
 
+function findOldestMovie(p) {
+  return p.reduce((vecchio, corrente) => {
+    if (parseInt(corrente.Year) < parseInt(vecchio.Year)) {
+      return corrente;
+    } else {
+      return vecchio;
+    }
+  });
+}
+ console.log(findOldestMovie(movies));
+
+
 /* ESERCIZIO 13
   Scrivi una funzione per ottenere il numero di film contenuti nell'array fornito.
 */
 
+function film(n){
+return n.length
+}
+
+console.log(film(movies))
 /* ESERCIZIO 14
   Scrivi una funzione per creare un array con solamente i titoli dei film contenuti nell'array fornito.
 */
+
+function titoli(f){
+return f.map(film => film.Title)
+}
+
+console.log(titoli(movies))
 
 /* ESERCIZIO 15
   Scrivi una funzione per ottenere dall'array fornito solamente i film usciti nel millennio corrente.
 */
 
+function post2000(f){
+  return f.map(film=>film.Year > 2000)
+}
+console.log (post2000(movies))
+
+/*function titoliFilm(f) {
+  return f.map((film) => film.Title);
+}
+console.log(titoliFilm(movies));*/
 /* ESERCIZIO 16
   Scrivi una funzione per ottenere dall'array fornito uno specifico film (la funzione riceve un imdbID come parametro).
 */
