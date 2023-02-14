@@ -168,7 +168,13 @@ return stringa.slice(1,-1)
 
 }
 
-console.log(cutString('stringa'))
+function cutString (stringa){
+
+    return stringa.splice(1,stringa.length -1);
+    
+    }
+
+console.log(cutString('Hello World'))
 
 /* ESERCIZIO 10
  Scrivi una funzione di nome "giveMeRandom", che accetta come parametro un numero n e ritorna un'array contenente n numeri casuali inclusi tra 0 e 10.
@@ -176,12 +182,12 @@ console.log(cutString('stringa'))
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
-function giveMeRandom(n){
-    let array= [];
-    for(let i=0;i<n;i++){
-     array.push(Math.floor(Math.random()*10))
-    }
-    return array
-}
-console.log(giveMeRandom(11))
+// function giveMeRandom(n){
+//     let array= [];
+//     for(let i=0;i<n;i++){
+//      array.push(Math.floor(Math.random()*10))
+//     }
+//     return array
+// }
+// console.log(giveMeRandom(11))
 
