@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Livvic:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="style2.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>TODO LIST</h1>
+    <div class="container">
+        
+        <div class="controls">
+          <span>Task completati: <span id="item-count">0</span></span>
+          <span>Task da completare: <span id="unchecked-count">0</span></span>
+        </div>
+        <input type="text" id="input" name="input">
+        <button class="button" onClick="newTodo(); checker()">Aggiungi task</button>
+        <ul id="todo-list" class="todo-list"></ul>
+        
+        
+        
+        <script src="script2.js"></script>
+      </div>
+</body>
+</html>
