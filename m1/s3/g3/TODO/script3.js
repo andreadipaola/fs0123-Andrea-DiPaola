@@ -1,25 +1,37 @@
-let taskInput = document.getElementById("task");
-let taskList = document.getElementById("taskList");
+let taskInput = document.querySelector("#task-input");
+let addTaskBtn = document.querySelector("#add-task-btn");
+let taskList = document.querySelector("#task-list");
+
+addTaskBtn.addEventListener("click", () => addTask());
+taskInput.addEventListener("keyup", function(event) {
+    event.preventDefault();
+    if (event.keyCode === 13) {
+        addTaskBtn.click();
+    }
+});
 
 function addTask() {
-    let taskText = taskInput.value;
-    if (taskText !== "") {
+    if (taskInput.value != 0) {
         let taskItem = document.createElement("li");
-        taskItem.innerText = taskText;
+        let taskSpan = document.createElement("span");
+        taskSpan.className = "task-span"
+        taskSpan.appendChild(document.createTextNode(taskInput.value));
+        taskItem.appendChild(taskSpan);
         taskList.appendChild(taskItem);
         taskInput.value = "";
 
-        taskItem.addEventListener("click", () => {
-            taskItem.classList.toggle("completed");
-        });
+        let dltTaskBtn = document.createElement("button");
+        dltTaskBtn.innerText = "Elimina";
+        dltTaskBtn.id = "dlt-task-btn";
+        taskItem.appendChild(dltTaskBtn);
 
-        let deleteButton = document.createElement("button");
-        deleteButton.innerText = "Elimina";
-        deleteButton.id = "remove";
-        deleteButton.addEventListener("click", () => {
-            taskItem.remove();
-        });
-        taskItem.appendChild(deleteButton);
+        dltTaskBtn.addEventListener("click", () => taskItem.remove());
+        taskSpan.addEventListener("click", () => taskSpan.classList.toggle("checked"));
+    } else if (true) {
+
     }
-}
+};
+
+
+
 

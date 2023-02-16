@@ -6,73 +6,81 @@
 
 body {
     height: 100vh;
+    font-family: 'Livvic', sans-serif;
+    color: white;
+    background: linear-gradient(45deg, rgba(29, 53, 87, 1) 0%, rgba(69, 123, 157, 1) 35%, rgba(168, 218, 220, 1) 100%);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-family: 'Livvic', sans-serif;
-    color: white;
-    background: linear-gradient(45deg, rgba(29, 53, 87, 1) 0%, rgba(69, 123, 157, 1) 35%, rgba(168, 218, 220, 1) 100%);
 }
 
 .container {
-    background-color: transparent;
     padding: 2rem;
+    background-color: rgba(255, 255, 255, 0.3);
     box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15), 0px 2px 4px 0px rgba(0, 0, 0, 0.12);
 }
 
-    h1 {
-        font-size: 4rem;
-        font-weight: 600;
-        margin-bottom: 2rem;
-    }
+h1 {
+    font-size: 4rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+}
 
-    .button {
-        color: white;
-        background-color: #06d6a0;
-        font-size: 1.5rem;
-        border: none;
-        padding: 1rem 1.25rem;
-        font-family: 'Livvic', sans-serif;
-        box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15), 0px 2px 4px 0px rgba(0, 0, 0, 0.12);
-    }
+.task-container {
+    display: flex;
+    justify-content: space-between;
+}
 
-    div span {
-        font-size: 1.5rem;
-    }
-    #task {
-        font-size: 1.5rem;
-        border: none;
-        outline: none;
-        padding: 1rem 1.25rem;
-        font-family: 'Livvic', sans-serif;
-        box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15), 0px 2px 4px 0px rgba(0, 0, 0, 0.12);
-    }
+#task-input {
+    font-size: 1.5rem;
+    font-family: 'Livvic', sans-serif;
+    margin-right: 0.7rem;
+    padding: 1rem 1.25rem;
+    border: none;
+    outline: none;
+    box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15), 0px 2px 4px 0px rgba(0, 0, 0, 0.12);
+    flex-grow: 3;
+}
 
-    ul li {
-        list-style: none;
-        font-size: 1.5rem;
-        margin-top: 1rem;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        text-transform: capitalize;
-        
-    }
+#add-task-btn {
+    font-family: 'Livvic', sans-serif;
+    font-size: 1.5rem;
+    color: white;
+    background-color: #06d6a0;
+    padding: 1rem 1.25rem;
+    border: none;
+    box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15), 0px 2px 4px 0px rgba(0, 0, 0, 0.12);
+}
 
-    li.completed {
-        text-decoration: line-through;
-    }
+.task-span {
+    font-size: 1.5rem;
+}
 
-    #remove {
-        /* border-radius: 10px; */
-        background-color: #ef476f;
-        color: white;
-        font-size: 1.3rem;
-        border: none;
-        padding: 0.7rem 1rem;
-        font-family: 'Livvic', sans-serif;
-        margin-left: 1rem;
-        box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15), 0px 2px 4px 0px rgba(0, 0, 0, 0.12);
-        
-    }
+ul li {
+    list-style: none;
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: capitalize;
+
+}
+
+.checked {
+    /* color:#ef476f; */
+    text-decoration: line-through;
+}
+
+#dlt-task-btn {
+    font-family: 'Livvic', sans-serif;
+    font-size: 1.3rem;
+    color: white;
+    background-color: #ef476f;
+    margin-left: 1rem;
+    padding: 0.7rem 1rem;
+    border: none;
+    box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15), 0px 2px 4px 0px rgba(0, 0, 0, 0.12);
+
+}

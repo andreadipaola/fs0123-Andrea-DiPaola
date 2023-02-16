@@ -1,18 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <input type="text">
-    <button></button>
-    <h1></h1>
+    <button>Aggiungi Task</button>
+    <ul></ul>
 
     <script>
-        let input = document.querySelector()
+        //seleziono gli elementi del DOM con cui andrò ad interagire
+        let input = document.querySelector("input"); 
+        let button = document.querySelector("button");
+        let textArea = document.querySelector("ul");
+        
+        //creo un evento al verificarsi del quale verrà chiamata una funzione
+        button.addEventListener("click", () => createItem());
+
+        //funzione chiamata al verificarsi dell'evento.
+        function createItem() {
+            let item = document.createElement('li'); //creo un elemento <li>
+            let itemText = document.createTextNode(input.value); //credo del testo da includere nell'elemento <li>
+            item.appendChild(itemText); //aggiungo il testo all'interno dell'elemento <li>
+            let resetBtn = document.createElement("button");
+            let buttonText = document.createTextNode("Delete");
+            resetBtn.appendChild(buttonText);
+            textArea.appendChild(item).appendChild(resetBtn); //aggiungo 'elemento <li> all'elemento <ul> padre
+        }
+
+
+        function deleteItem() {
+
+        }
+
     </script>
 </body>
+
 </html>
