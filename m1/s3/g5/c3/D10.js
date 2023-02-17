@@ -264,60 +264,46 @@ console.log(whatDayIsIt());
   }
 */
 
-// function rollTheDices(nTimes) {
-//   let somma = 0;
-//   somma = nTimes * dice();
-//   console.log(dice());
-//   console.log(nTimes);
-//   console.log(somma);
-// }
 
-// console.log(rollTheDices(3));
-
-function rollTheDices(n) {
-  let somma = 0;
-  let array = []
+function rollTheDices(nTimes) {
+  let sum = 0;
+  let array = [];
   let random;
-  for (let i = 0; i < n; i++) {
+  for (let i = 0; i < nTimes; i++) {
     random = dice()
-    somma += random
+    sum += random
     array.push(random)
   }
   return {
-    sum: somma,
+    sum: sum,
     values: array
   }
 }
 
+console.log(rollTheDices(3));
 /* ESERCIZIO 9
   Scrivi una funzione chiamata "howManyDays" che riceve una data come parametro e ritorna il numero di giorni trascorsi da tale data.
 */
 
-// function howManyDays(date) {
+function howManyDays(date) {
+  let today = new Date();
+  let day = 24 * 60 * 60 * 1000;
+  let difference = today.getTime() - date.getTime();
+  let passedDay = Math.floor(difference / day);
+  return passedDay;
+}
 
-// }
+console.log(howManyDays(new Date('1986-2-15')))
 
 /* ESERCIZIO 10
   Scrivi una funzione chiamata "isTodayMyBirthday" che deve ritornare true se oggi è il tuo compleanno, falso negli altri casi.
 */
 
-// function isTodayMyBirthday() {
-//   let today = new Date();
-//   let myBirthday = new Date();
-//   myBirthday.setFullYear(2023, 2, 17);
-//   if (today.getMonth() === myBirthday.getMonth() && today.getDate() === myBirthday.getDate()) {
-//     console.log(today);
-//     console.log(myBirthday);
-//     console.log("Tantissimi auguri!! Oggi è il tuo compleanno!!");
-//   }
-// }
-
-// console.log(isTodayMyBirthday());
 function isTodayMyBirthday() {
   let today = new Date();
-  let birthDate = new Date(today.getFullYear(), 6, 18);
-
-  if (today.getMonth() == 6 && today.getDate == 18) {
+  let myBirthday = new Date();
+  myBirthday.setFullYear(2023, 2, 17);
+  if (today.getMonth() === myBirthday.getMonth() && today.getDate() === myBirthday.getDate()) {
     return true;
   } else {
     return false;
@@ -396,27 +382,37 @@ console.log(sumAllTheYears(movies));
 /* ESERCIZIO 17
   Scrivi una funzione chiamata "searchByTitle" che riceve una stringa come parametro e ritorna i film nell'array "movies" fornito che la contengono nel titolo.
 */
-// function searchByTitle (films,string) {
-//   return films.find(movie => movie.name === string);
-// }
 
 function searchByTitle(string) {
-  let searchedMovie;
+  let searchedMovie = [];
   for (let movie of movies) {
     let searchString = (movie.Title.toLowerCase()).search(string.toLowerCase())
     if (searchString !== -1) {
-      searchedMovie = movie
+      searchedMovie.push(movie);
     }
   }
-  return searchedMovie.Title;
+  return searchedMovie;
 }
 
-console.log(searchByTitle("lord"));
+console.log(searchByTitle("Avangers"));
 
 /* ESERCIZIO 18
   Scrivi una funzione chiamata "searchAndDivide" che riceve una stringa come parametro e ritorna un oggetto contenente due array: "match" e "unmatch".
   "match" deve includere tutti i film dell'array "movies" fornito che contengono la stringa fornita all'interno del proprio titolo, mentre "unmatch" deve includere tutti i rimanenti.
 */
+function searchAndDivide(string) {
+  let match = [];
+  let unmatch = [];
+  for (let movie in movies) {
+    let searchString = (movie.Title.toLowerCase()).search(string.toLowerCase())
+    if (searchString !== -1) {
+      match.push(movie);
+    } else {
+      unmatch.push(movie);
+    }
+  }
+  return searchedMovie;
+}
 
 /* ESERCIZIO 19
   Scrivi una funzione chiamata "removeIndex" che riceve un numero come parametro e ritorna l'array "movies" fornito privo dell'elemento nella posizione ricevuta come parametro.
@@ -501,10 +497,10 @@ function addTestClass() {
  
 */
 
-function halfTree(height){
-  for(let i = 0; i <= height; ++i){
-      let row = "* ".repeat(i);
-      console.log(row);
+function halfTree(height) {
+  for (let i = 0; i <= height; ++i) {
+    let row = "* ".repeat(i);
+    console.log(row);
   }
 }
 
@@ -536,8 +532,8 @@ tree(7);
 */
 
 function isItPrime(num) {
-  for(let i = 2, s = Math.sqrt(num); i <= s; i++) {
-      if(num % i === 0) return false;
+  for (let i = 2, s = Math.sqrt(num); i <= s; i++) {
+    if (num % i === 0) return false;
   }
   return num > 1;
 }
