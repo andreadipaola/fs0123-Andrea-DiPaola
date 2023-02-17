@@ -300,13 +300,14 @@ console.log(howManyDays(new Date('1986-2-15')))
 */
 
 function isTodayMyBirthday() {
-  let today = new Date();
+
+  let today = new Date()
   let myBirthday = new Date();
-  myBirthday.setFullYear(2023, 2, 17);
-  if (today.getMonth() === myBirthday.getMonth() && today.getDate() === myBirthday.getDate()) {
-    return true;
+  myBirthday.setFullYear(1986, 2, 15);
+  if ((myBirthday.getFullYear(), myBirthday.getMonth(), myBirthday.getDate()) == (today.getFullYear(), today.getMonth(), today.getDate())) {
+    return true
   } else {
-    return false;
+    return false
   }
 }
 
